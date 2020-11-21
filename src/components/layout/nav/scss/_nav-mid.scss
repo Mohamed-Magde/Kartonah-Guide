@@ -1,0 +1,263 @@
+.nav-mid {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  .cart {
+    display: flex;
+
+  }
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-info {
+    width: 20%;
+    margin-left: 1em;
+    margin-bottom: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+    &-item {
+      display: block;
+      position: relative;
+      padding: .5em 1em;
+
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transition: all .5s;
+        width: 0%;
+        height: 100%;
+        background-color: $colorOne;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        box-shadow: 0px 1px 5px rgba(#000, .2);
+
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .auth {
+      display: block;
+      position: relative;
+      padding: .5em 1em;
+      cursor: pointer;
+      border: none;
+      background-color: inherit;
+      font-size: 1.2rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transition: all .5s;
+        width: 0%;
+        height: 100%;
+        background-color: $colorOne;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+    }
+
+
+
+
+    a {
+      color: $colorTwo;
+
+
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+      }
+    }
+
+
+  }
+
+  &-logo {
+    width: 25%;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 22222;
+
+    img {
+      width: 12em;
+    }
+  }
+
+  &-search {
+    width: 50%;
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+
+    &-select {
+      background-color: $colorFour;
+      border: 1px solid $colorFour;
+      z-index: 222;
+      margin-right: -1em;
+      box-shadow: -8px 8px 6px -6px rgba(#000, 0.2);
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    &-item {
+      width: 25em;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 1px 5px rgba(#000, 0.2);
+    }
+  }
+}
+
+.btn-search {
+  background-color: $colorTwo;
+  margin-left: -2em;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  padding: 0.4em 1em;
+  border: none;
+  box-shadow: 8px 0px 6px -6px rgba(#000, 0.2);
+
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+
+  i {
+    color: $colorOne;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav {
+    display: flex;
+
+    &-down {
+      justify-self: start;
+    }
+  }
+
+  .nav-mid {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+
+
+    &-info {
+
+
+      display: none;
+
+
+
+
+      .auth {
+        display: block;
+        position: relative;
+        padding: .5em 1em;
+
+        &::after {
+          content: "";
+          position: absolute;
+          transition: all .5s;
+          width: 0%;
+          height: 100%;
+          background-color: $colorOne;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+      }
+
+
+      a {
+        color: $colorTwo;
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        i {
+          font-size: 1.3rem;
+        }
+      }
+
+
+    }
+
+    &-logo {
+      display: none;
+
+      img {
+        width: 15em;
+      }
+    }
+
+    &-search {
+      width: 40rem;
+      margin-left: 7.5em;
+      margin-right: 0em;
+
+      i {
+        font-size: 2rem;
+      }
+
+      display: flex;
+
+      &-select {
+        display: none;
+      }
+
+      &-item {
+        width: 100%;
+        padding: 0.7em 1em;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 1px 5px rgba(#000, 0.2);
+      }
+    }
+  }
+
+
+}

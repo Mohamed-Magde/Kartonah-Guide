@@ -1,0 +1,192 @@
+.guide-market {
+  margin-top: 8em;
+  text-align: center;
+}
+
+.guide-market .guide-title {
+  margin-top: 3em;
+}
+
+.guide-market-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.guide-market-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.guide-market-block:nth-child(2) img {
+  display: block;
+  width: 255px;
+  height: 236px;
+  margin-top: -1em;
+}
+
+.guide-market-block:nth-child(2) p {
+  margin-left: -.5em;
+}
+
+.guide-market-block:nth-child(2) p span {
+  margin-left: 0em;
+}
+
+.guide-market-block:nth-child(2) p .border {
+  left: .07em !important;
+  margin: 0;
+  bottom: .15em !important;
+}
+
+.guide-market-block:nth-child(1) img {
+  display: block;
+  width: 304px;
+  height: 163px;
+}
+
+.guide-market-block p {
+  font-size: 123px;
+  color: #FDDA2A;
+  margin-left: -.75em;
+  z-index: 222;
+  position: relative;
+}
+
+.guide-market-block p .market-us-dollars {
+  position: absolute;
+  bottom: 3em;
+  right: -2em;
+  font-size: 14px;
+  display: inline-block;
+  color: #fff;
+  background-color: #41484F;
+  padding: .2em .3em;
+  margin-left: -3em;
+}
+
+.guide-market-block p .border {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: .07em;
+  left: .05em;
+  -webkit-text-fill-color: transparent;
+  font-size: 123px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #41484F;
+  z-index: -1;
+}
+
+.guide-market .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-market {
+    margin-top: 8em;
+    text-align: center;
+  }
+  .guide-market .guide-title {
+    margin-top: 3em;
+  }
+  .guide-market-img {
+    display: block;
+    margin: 0 auto;
+  }
+  .guide-market-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .guide-market-block:nth-child(2) img {
+    display: block;
+    width: 255px;
+    height: 236px;
+    margin-top: -1em;
+  }
+  .guide-market-block:nth-child(2) p {
+    margin-left: 0em;
+    margin-top: -.5em;
+  }
+  .guide-market-block:nth-child(2) p span {
+    margin-left: 16em;
+    margin-top: -5em;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: 22;
+  }
+  .guide-market-block:nth-child(2) p .border {
+    bottom: .15em !important;
+    margin: 0;
+    display: none;
+  }
+  .guide-market-block:nth-child(1) img {
+    display: block;
+    width: 304px;
+    height: 163px;
+  }
+  .guide-market-block p {
+    font-size: 123px;
+    color: #FDDA2A;
+    margin-left: 0em;
+    z-index: 222;
+    position: relative;
+  }
+  .guide-market-block p span {
+    margin-left: 16em;
+    margin-top: -5em;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: 22;
+  }
+  .guide-market-block p .border {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: -.25em;
+    left: .05em;
+    -webkit-text-fill-color: transparent;
+    font-size: 123px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41484F;
+    z-index: -1;
+  }
+  .guide-market .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,125 @@
+.guide-obs {
+  position: relative;
+  text-align: center;
+  color: #41484F;
+  margin-bottom: 4em;
+}
+
+.guide-obs-img {
+  position: absolute;
+  right: 5%;
+  top: -2em;
+}
+
+.guide-obs .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-obs-block {
+  width: 350px;
+  height: 270px;
+  border: 1px solid #D5D5D5;
+  border-radius: 10px;
+  padding: 1em;
+  margin-right: 2em;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.guide-obs-block:nth-child(3) {
+  margin-right: 0;
+}
+
+.guide-obs-block img {
+  width: 72.35px;
+  height: 90px;
+}
+
+.guide-obs-block span {
+  display: block;
+  font-size: 24px;
+}
+
+.guide-obs-block p {
+  font-size: 18px;
+  color: #8B8B8B;
+  font-weight: 200;
+}
+
+.guide-title {
+  font-size: 1.9rem;
+  color: #41484F;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .guide-obs {
+    position: relative;
+    text-align: center;
+    color: #41484F;
+    margin-bottom: 4em;
+  }
+  .guide-obs-img {
+    position: absolute;
+    right: 5%;
+    top: -2em;
+  }
+  .guide-obs .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .guide-obs-block {
+    width: 80%;
+    height: 270px;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    padding: 1em;
+    margin-right: 2em;
+    margin-top: 3em;
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  }
+  .guide-obs-block:nth-child(3) {
+    margin-right: 2em;
+  }
+  .guide-obs-block img {
+    width: 72.35px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  .guide-obs-block span {
+    display: block;
+    font-size: 24px;
+  }
+  .guide-obs-block p {
+    font-size: 18px;
+    color: #8B8B8B;
+    font-weight: 200;
+  }
+}
+/*# sourceMappingURL=main.css.map */

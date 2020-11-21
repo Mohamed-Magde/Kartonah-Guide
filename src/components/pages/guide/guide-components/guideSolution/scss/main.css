@@ -1,0 +1,122 @@
+.guide-solution {
+  margin-top: 10em;
+  text-align: center;
+  margin-bottom: 4em;
+  color: #41484F;
+}
+
+.guide-solution .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-solution-block {
+  width: 225px;
+  margin-right: 4em;
+}
+
+.guide-solution-block:nth-child(4) {
+  margin-right: 0;
+}
+
+.guide-solution-block p {
+  color: #8B8B8B;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.guide-solution-block span {
+  display: block;
+  font-size: 24px;
+}
+
+.guide-solution-block img {
+  width: 92.62px;
+}
+
+.guide-solution .curve-first,
+.guide-solution .curve-second,
+.guide-solution .curve-third {
+  position: absolute;
+}
+
+.guide-solution .curve-first {
+  left: 18%;
+  top: 0;
+}
+
+.guide-solution .curve-third {
+  top: 0;
+  right: 18%;
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-title {
+    font-size: 4rem;
+  }
+  .guide-solution {
+    margin-top: 10em;
+    text-align: center;
+    margin-bottom: 4em;
+    color: #41484F;
+  }
+  .guide-solution .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .guide-solution-block {
+    width: 225px;
+    margin-right: 0em;
+    margin-top: 3em;
+  }
+  .guide-solution-block:nth-child(4) {
+    margin-right: 0;
+  }
+  .guide-solution-block p {
+    color: #8B8B8B;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .guide-solution-block span {
+    display: block;
+    font-size: 24px;
+  }
+  .guide-solution-block img {
+    margin: 0 auto;
+  }
+  .guide-solution .curve-first,
+  .guide-solution .curve-second,
+  .guide-solution .curve-third {
+    position: absolute;
+    display: none;
+  }
+  .guide-solution .curve-first {
+    left: 18%;
+    top: 0;
+  }
+  .guide-solution .curve-third {
+    top: 0;
+    right: 18%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

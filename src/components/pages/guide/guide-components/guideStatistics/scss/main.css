@@ -1,0 +1,132 @@
+.guide-statistics {
+  margin-top: 4em;
+  color: #fff;
+  height: 554px;
+  position: relative;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.guide-statistics .guide-title {
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 22;
+  position: relative;
+}
+
+.guide-statistics-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.guide-statistics .container {
+  position: relative;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guide-statistics-block h6 {
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: .5em;
+}
+
+.guide-statistics-block img {
+  width: 70px;
+}
+
+.guide-statistics-block span {
+  display: block;
+  font-size: 80px;
+  color: #FDDA2A;
+  line-height: 1;
+}
+
+.guide-statistics-block p {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-statistics {
+    margin-top: 4em;
+    color: #fff;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 2em;
+    background-color: #41484F;
+    padding-bottom: 4em;
+  }
+  .guide-statistics .guide-title {
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 22;
+    position: relative;
+    margin-bottom: .5em;
+  }
+  .guide-statistics-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .guide-statistics .container {
+    position: relative;
+    z-index: 11;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .guide-statistics-block {
+    margin-top: 4em;
+  }
+  .guide-statistics-block :nth-child(1) {
+    margin-top: 0;
+  }
+  .guide-statistics-block h6 {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: .5em;
+  }
+  .guide-statistics-block img {
+    width: 70px;
+    margin: 0 auto;
+  }
+  .guide-statistics-block span {
+    display: block;
+    font-size: 80px;
+    color: #FDDA2A;
+    line-height: 1;
+  }
+  .guide-statistics-block p {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+}
+/*# sourceMappingURL=main.css.map */

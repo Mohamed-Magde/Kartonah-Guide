@@ -1,0 +1,11 @@
+.blog-details {
+  &-container {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  &-wrapper {
+    width: 825px;
+  }
+}

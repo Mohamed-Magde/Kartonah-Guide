@@ -1,0 +1,143 @@
+// Colors
+$colorOne:#FDDA2A;
+$colorTwo:#41484F;
+$colorThree:#707070;
+$colorFour:#ECECEC;
+$colorFive:#575D63;
+$colorSix:#F9F9F9;
+
+
+.guide-statistics {
+  margin-top: 4em;
+  color: #fff;
+  height: 554px;
+  position: relative;
+  text-align: center;
+  padding-top: 2em;
+
+  .guide-title {
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 22;
+    position: relative;
+  }
+
+  &-bg {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+
+    position: relative;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-block {
+    h6 {
+      font-size: 24px;
+      font-weight: normal;
+      text-transform: capitalize;
+      margin-bottom: .5em;
+    }
+
+    img {
+      width: 70px;
+    }
+
+    span {
+      display: block;
+      font-size: 80px;
+      color: $colorOne;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-statistics {
+    margin-top: 4em;
+    color: #fff;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 2em;
+    background-color: #41484F;
+    padding-bottom: 4em;
+
+    .guide-title {
+      color: #fff;
+      text-transform: uppercase;
+      z-index: 22;
+      position: relative;
+      margin-bottom: .5em;
+    }
+
+    &-bg {
+      display: none;
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+
+      position: relative;
+      z-index: 11;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    &-block {
+      margin-top: 4em;
+
+      :nth-child(1) {
+        margin-top: 0;
+      }
+
+      h6 {
+        font-size: 24px;
+        font-weight: normal;
+        text-transform: capitalize;
+        margin-bottom: .5em;
+      }
+
+      img {
+        width: 70px;
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+        font-size: 80px;
+        color: $colorOne;
+        line-height: 1;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

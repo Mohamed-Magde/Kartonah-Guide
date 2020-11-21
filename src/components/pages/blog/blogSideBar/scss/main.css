@@ -1,0 +1,106 @@
+.blog-bar {
+  width: 255px;
+  height: 100%;
+  margin-left: 4em;
+  color: #41484f;
+}
+
+.blog-bar-viewed, .blog-bar-category, .blog-bar-tag {
+  margin-top: 2em;
+}
+
+.blog-bar-viewed-title, .blog-bar-category-title, .blog-bar-tag-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.blog-bar-viewed-title::after, .blog-bar-category-title::after, .blog-bar-tag-title::after {
+  content: '';
+  position: absolute;
+  bottom: -.75em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #DFDFDF;
+}
+
+.blog-bar-viewed-title::before, .blog-bar-category-title::before, .blog-bar-tag-title::before {
+  content: '';
+  position: absolute;
+  bottom: -.75em;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background-color: #fdda2a;
+  z-index: 2;
+}
+
+.blog-bar-viewed figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.blog-bar-viewed figure figcaption {
+  padding-left: 1em;
+}
+
+.blog-bar-viewed figure img {
+  width: 80px;
+  height: 80px;
+}
+
+.blog-bar-viewed figure span {
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: .5em;
+  margin-top: -.2em;
+}
+
+.blog-bar-viewed figure p {
+  font-size: 14px;
+  color: #BFBFBF;
+}
+
+.blog-bar-viewed figure p i {
+  margin-right: .5em;
+}
+
+.blog-bar-category-wrapper-block {
+  margin-top: .75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-bar-category-wrapper-block p {
+  font-size: 1.2rem;
+}
+
+.blog-bar-tag-wrapper {
+  width: 110%;
+  margin-top: -.5em;
+}
+
+.blog-bar-tag-wrapper-block {
+  font-size: 1rem;
+  color: #41484f;
+  display: inline-block;
+  margin-right: .75em;
+  margin-top: .5em;
+  padding: .2em .4em;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  background-color: rgba(223, 223, 223, 0.1);
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,338 @@
+.guide-form {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: #41484F;
+}
+
+.guide-form-right {
+  width: 445px;
+}
+
+.guide-form-right label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1.5em;
+}
+
+.guide-form-right input {
+  background-color: #F2F2F2;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+
+.guide-form-right input::-webkit-input-placeholder {
+  color: #CFCFCF;
+}
+
+.guide-form-right input:-ms-input-placeholder {
+  color: #CFCFCF;
+}
+
+.guide-form-right input::-ms-input-placeholder {
+  color: #CFCFCF;
+}
+
+.guide-form-right input::placeholder {
+  color: #CFCFCF;
+}
+
+.guide-form-right textarea {
+  background-color: #F2F2F2;
+  border: none;
+  width: 100%;
+  height: 158px;
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.guide-form-right textarea::-webkit-input-placeholder {
+  color: #CFCFCF;
+  font-family: "QuireSansW01-Regular", sans-serif;
+}
+
+.guide-form-right textarea:-ms-input-placeholder {
+  color: #CFCFCF;
+  font-family: "QuireSansW01-Regular", sans-serif;
+}
+
+.guide-form-right textarea::-ms-input-placeholder {
+  color: #CFCFCF;
+  font-family: "QuireSansW01-Regular", sans-serif;
+}
+
+.guide-form-right textarea::placeholder {
+  color: #CFCFCF;
+  font-family: "QuireSansW01-Regular", sans-serif;
+}
+
+.guide-form-right-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.guide-form-right-title span {
+  padding: .01em .3em;
+  background-color: #FDDA2A;
+}
+
+.guide-form-left {
+  width: 554.24px;
+}
+
+.guide-form-left h2 {
+  width: 380px;
+}
+
+.guide-form-left p {
+  font-size: 20px;
+  color: #B2B2B2;
+  display: block;
+  width: 465px;
+}
+
+.guide-form-left ul {
+  margin-top: 4em;
+}
+
+.guide-form-left ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.guide-form-left ul li:nth-child(1) p {
+  font-weight: bold;
+}
+
+.guide-form-left ul li p {
+  color: #41484F;
+  display: inline;
+}
+
+.guide-form-left ul li span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin-right: 2em;
+}
+
+.guide-form-left ul li span svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guide-form-left ul li span i {
+  position: relative;
+  z-index: 11;
+  font-size: 1.5rem;
+}
+
+.guide-form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guide-form .guide-form-submit {
+  display: block;
+  margin-top: 1.5em;
+  background-color: #FDDA2A;
+  width: 174px;
+  height: 50px;
+  font-size: 18px;
+  color: #41484F;
+  text-transform: uppercase;
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-form {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    color: #41484F;
+  }
+  .guide-form-right {
+    width: 100%;
+    margin-top: 4em;
+  }
+  .guide-form-right label {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1.5em;
+  }
+  .guide-form-right input {
+    background-color: #F2F2F2;
+    border: none;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 1em;
+  }
+  .guide-form-right input::-webkit-input-placeholder {
+    color: #CFCFCF;
+  }
+  .guide-form-right input:-ms-input-placeholder {
+    color: #CFCFCF;
+  }
+  .guide-form-right input::-ms-input-placeholder {
+    color: #CFCFCF;
+  }
+  .guide-form-right input::placeholder {
+    color: #CFCFCF;
+  }
+  .guide-form-right textarea {
+    background-color: #F2F2F2;
+    border: none;
+    width: 80%;
+    height: 158px;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-top: 1em;
+  }
+  .guide-form-right textarea::-webkit-input-placeholder {
+    color: #CFCFCF;
+    font-family: "QuireSansW01-Regular", sans-serif;
+  }
+  .guide-form-right textarea:-ms-input-placeholder {
+    color: #CFCFCF;
+    font-family: "QuireSansW01-Regular", sans-serif;
+  }
+  .guide-form-right textarea::-ms-input-placeholder {
+    color: #CFCFCF;
+    font-family: "QuireSansW01-Regular", sans-serif;
+  }
+  .guide-form-right textarea::placeholder {
+    color: #CFCFCF;
+    font-family: "QuireSansW01-Regular", sans-serif;
+  }
+  .guide-form-right-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .guide-form-right-title span {
+    padding: .01em .3em;
+    background-color: #FDDA2A;
+  }
+  .guide-form-left {
+    width: 100%;
+  }
+  .guide-form-left h2 {
+    width: 90%;
+  }
+  .guide-form-left p {
+    font-size: 14px;
+    color: #B2B2B2;
+    display: block;
+    width: 80%;
+  }
+  .guide-form-left ul {
+    margin-top: 4em;
+  }
+  .guide-form-left ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 1em;
+  }
+  .guide-form-left ul li:nth-child(1) p {
+    font-weight: bold;
+  }
+  .guide-form-left ul li p {
+    color: #41484F;
+    display: inline;
+    font-size: 12px;
+    width: 50%;
+  }
+  .guide-form-left ul li span {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 2em;
+  }
+  .guide-form-left ul li span svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .guide-form-left ul li span i {
+    position: relative;
+    z-index: 11;
+    font-size: 1.5rem;
+  }
+  .guide-form .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guide-form .guide-form-submit {
+    display: block;
+    margin-top: 1.5em;
+    background-color: #FDDA2A;
+    width: 174px;
+    height: 50px;
+    font-size: 18px;
+    color: #41484F;
+    text-transform: uppercase;
+    display: -ms-grid;
+    display: grid;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

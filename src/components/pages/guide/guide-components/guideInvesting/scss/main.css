@@ -1,0 +1,81 @@
+.guide-investing {
+  position: relative;
+  height: 600px;
+  margin-bottom: 2em;
+  color: #fff;
+  padding-top: 5em;
+}
+
+.guide-investing-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guide-investing .container {
+  position: relative;
+  z-index: 1;
+}
+
+.guide-investing-title {
+  display: inline-block;
+  width: 390px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+.guide-investing-title span {
+  color: #41484F;
+  background-color: #FDDA2A;
+  padding: .1em .3em;
+}
+
+.guide-investing-desc {
+  display: block;
+  width: 540.5px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-investing {
+    position: relative;
+    height: 60vh;
+    margin-bottom: 2em;
+    color: #fff;
+    padding-top: 5em;
+  }
+  .guide-investing-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .guide-investing .container {
+    position: relative;
+    z-index: 1;
+  }
+  .guide-investing-title {
+    display: inline-block;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+  }
+  .guide-investing-title span {
+    color: #41484F;
+    background-color: #FDDA2A;
+    padding: .1em .3em;
+  }
+  .guide-investing-desc {
+    display: block;
+    width: 80%;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

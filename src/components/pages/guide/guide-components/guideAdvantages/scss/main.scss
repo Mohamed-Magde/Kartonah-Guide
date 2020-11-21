@@ -1,0 +1,136 @@
+// Colors
+$colorOne:#FDDA2A;
+$colorTwo:#41484F;
+$colorThree:#707070;
+$colorFour:#ECECEC;
+$colorFive:#575D63;
+$colorSix:#F9F9F9;
+
+.guide-adv {
+  margin-top: 4em;
+  align-items: center;
+  color: $colorTwo;
+
+  .guide-title {
+    margin-bottom: .5em;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #747474;
+    font-size: 18px;
+    display: block;
+    margin-bottom: .5em;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: .25em;
+
+    img {
+      margin-right: .5em;
+    }
+  }
+
+  &-first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    &-content {
+      width: 491px;
+    }
+
+  }
+
+  &-second {
+    display: flex;
+    justify-content: space-between;
+
+    &-content {
+      width: 491px;
+    }
+  }
+
+  margin-bottom: 4em;
+
+  &-img {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .guide-adv {
+    margin-top: 4em;
+    align-items: center;
+    color: $colorTwo;
+
+    .guide-title {
+      margin-bottom: .5em;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #747474;
+      font-size: 14px;
+      display: block;
+      margin-bottom: .5em;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2em;
+
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: .25em;
+      font-size: 1.2rem;
+      flex-direction: column;
+
+      img {
+        margin-right: .5em;
+      }
+    }
+
+    &-first {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      margin-bottom: 2em;
+
+      &-content {
+        width: 100%;
+
+        img {
+          width: 2em;
+        }
+      }
+    }
+
+    &-second {
+      display: flex;
+      justify-content: space-between;
+
+      &-content {
+        width: 100%;
+      }
+    }
+
+    margin-bottom: 4em;
+  }
+}

@@ -1,0 +1,47 @@
+$reset: 0px;
+$none: none;
+$clear: transparent;
+// Colors
+$colorOne: #fdda2a;
+$colorTwo: #41484f;
+$colorThree: #707070;
+$colorFour: #ececec;
+$colorFive: #575d63;
+$colorSix: #f9f9f9;
+
+.footer-top {
+  background-color: $colorTwo;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #fff;
+
+  .container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1em;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($colorSix, 0.3);
+    }
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+  &-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-right: 1em;
+    }
+  }
+}

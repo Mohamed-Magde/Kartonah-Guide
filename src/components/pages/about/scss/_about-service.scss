@@ -1,0 +1,59 @@
+.about-service {
+  margin-top: 8em;
+  margin-bottom: 8em;
+  text-align: center;
+
+  .heading-3 {
+    margin-bottom: 2em;
+
+    &:after {
+      left: 45%;
+
+
+    }
+
+    &::before {
+      left: 53%;
+
+    }
+  }
+
+  &-grid {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    span {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    p {
+      color: rgba($colorTwo, .7);
+    }
+
+    &-block {
+      background-color: #e2e2e2;
+      padding: 2em;
+
+      &:nth-child(2) {
+        background-color: #f0f0f0;
+      }
+
+      &:nth-child(4) {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-service {
+    &-grid {
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

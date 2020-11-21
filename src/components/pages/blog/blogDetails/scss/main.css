@@ -1,0 +1,12 @@
+.blog-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.blog-details-wrapper {
+  width: 825px;
+}
+/*# sourceMappingURL=main.css.map */

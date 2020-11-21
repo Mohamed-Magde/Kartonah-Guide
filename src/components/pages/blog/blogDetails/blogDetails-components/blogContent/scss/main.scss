@@ -1,0 +1,64 @@
+$colorOne: #fdda2a;
+$colorTwo: #41484f;
+$colorThree: #707070;
+$colorFour: #ececec;
+$colorFive: #575d63;
+$colorSix: #f9f9f9;
+
+
+.blog-content {
+
+  color: $colorTwo;
+
+  &-title {
+    margin-bottom: 1em;
+    text-align: center;
+
+    p {
+      color: #BFBFBF;
+
+      i {
+        margin-right: .5em;
+      }
+    }
+  }
+
+  &-body {
+    p {
+      font-size: 1rem;
+      display: inline-block;
+      margin-bottom: 1.5em;
+    }
+
+    ul {
+
+      list-style: disc;
+      margin-bottom: 1.5em;
+      margin-left: .75em;
+
+      p {
+        margin-bottom: 0em;
+      }
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: .75em;
+      margin-bottom: 2em;
+
+
+      figure {
+        box-shadow: 0px 1px 12px rgba(#000, .2);
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+
+
+      }
+    }
+  }
+}
