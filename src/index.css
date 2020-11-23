@@ -33,7 +33,10 @@ ul {
 }
 
 body {
-  font-family: "QuireSansW01-Regular", sans-serif;
+
+  font-family:
+    "QuireSansW01-Regular",
+    sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   line-height: 1.7;

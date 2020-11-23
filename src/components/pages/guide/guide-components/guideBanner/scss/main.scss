@@ -14,6 +14,7 @@ $colorSix:#F9F9F9;
 
   &-top {
     display: flex;
+    justify-content: space-between;
 
     &-left {
       .container {
@@ -65,7 +66,6 @@ $colorSix:#F9F9F9;
 
     .container {
       display: flex;
-
       justify-content: space-between;
 
 
@@ -100,8 +100,116 @@ $colorSix:#F9F9F9;
     margin-left: -1em;
 
   }
+
+
+
+  .ar-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    span,
+    p,
+    h1,
+    h2 {
+      font-family: 'Cairo',
+        sans-serif !important;
+    }
+
+    .guide-banner-top-right {
+      grid-column: 1 /2;
+      grid-row: 1/2;
+      margin-left: -1em;
+
+    }
+
+    .guide-banner-top-left {
+      grid-column: 2 / -1;
+      grid-row: 1/2;
+      text-align: right;
+      font-family: 'Cairo',
+        sans-serif !important;
+
+
+    }
+  }
 }
 
+.ar {
+
+  span,
+  p,
+  h1,
+  h2 {
+    font-family: 'Cairo',
+      sans-serif !important;
+  }
+
+  .guide-banner-bottom {
+    text-align: right;
+
+    &-block {
+      margin-right: 0;
+    }
+
+
+
+    .container {
+      .first {
+        order: 2;
+        margin: 0;
+        width: 300px;
+      }
+    }
+  }
+}
+
+.arabic {
+
+
+  span,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Cairo',
+      sans-serif !important;
+  }
+}
+
+.guide-lang {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 2222;
+  width: 2em;
+  height: 2em;
+
+
+  button {
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 1px 2px 6px rgba(#000, .2);
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: all .5s;
+    background-color: $colorTwo;
+    color: #FDDA2A;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: $colorOne;
+      color: $colorTwo;
+
+    }
+
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .guide-banner {
@@ -199,5 +307,6 @@ $colorSix:#F9F9F9;
 
     }
   }
+
 
 }

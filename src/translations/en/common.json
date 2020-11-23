@@ -1,0 +1,131 @@
+{
+  "welcome": {
+    "title": "Welcome to {{framework}}"
+  },
+  "banner": {
+    "span": "Franchise Guide",
+    "first": "kartonah Franchise",
+    "second": "Guide",
+    "p": "Kartonah Foundation belongs to one of the oldest commercial establishments in Turkey, which has over 8 years of experience in the fields of business and commercial activities. The institution is spread throughout the Middle East and North Africa.",
+    "bottom-first": "However, this is  not the end of  our horizons",
+    "bottom-second": "(this is not our limit), as we are looking to establish new branches by granting the franchise of the Kartonah brand to investors looking to spread and meet the worldwide market needs.",
+    "bottom-third": " As a commitment to our society, we have put in place a franchise system that helps create job opportunities for young people with limited funding ."
+
+  },
+  "obs": {
+    "title": "The Obstacles (Difficulties)",
+    "first-name": "Qunatity",
+    "second-name": "Diversity",
+    "third-name": "Prices",
+    "first-p": "The difficulty of making a successful deal in small quantities in the Turkish trade",
+    "second-p": "We offer Lack of diversity between Catagories , products, items and prices",
+    "third-p": "One of the most important problems facing customers and wholesale clothing merchants"
+  },
+  "solution": {
+    "title": "The Solution",
+    "name-1": "Search",
+    "name-2": "Easiness",
+    "name-3": "Comfort",
+    "name-4": "Time",
+    "p-1": "The possibility of searching easily in addition to a variety of",
+    "p-2": "Possibility to select small quantities",
+    "p-3": "Close deals from your office",
+    "p-4": "Save time and money needed to travel"
+  },
+  "statistics": {
+    "title": "KARTONAH COMPANY STATISTICS",
+    "name1": "Monthly Access Rate",
+    "name2": "Number Of Factories",
+    "name3": "Number Of Clients"
+  },
+  "franchise": {
+    "title": "Franchise",
+    "name1": "Our Success",
+    "name2": "Our Vision",
+    "name3": "Our Goal",
+    "p1": "After the success of the Kartonah experience, we developed an integrated system for granting and managing the franchise to ensure that our organization supports franchisees and to ensure that they succeed in presenting our brand adequately.",
+    "p2": "Kartonah aspires to transfer its own and practically tested idea (brand) to independent companies and institutions, and these small companies establishes its own project under the same",
+    "p3": "The goal is to open new horizons for growth and reach new target markets. In addition to that it gives the investor many advantages such as support, products and training."
+  },
+  "competitive": {
+    "title": "COMPETITIVE ADVANTAGES",
+    "name1": "The first in the market",
+    "name2": "1000+ factories",
+    "name3": "Ease of use",
+    "name4": "Categories",
+    "name5": "Handling speed",
+    "name6": "order tracking",
+    "p1": "The first in the online wholesale marketplace",
+    "p2": "Contract and cooperation with more than 1000 factories",
+    "p3": "Easy to search and to access to what you want",
+    "p4": "A list displaying different varieties and species",
+    "p5": "Through the presence of a safe and secure",
+    "p6": "The possibility of tracking the order from the beginning until it reaches"
+  },
+  "advantages": {
+    "title": "INVESTMENT ADVANTAGES",
+    "desc": "In order to develop our expansion plan, we seek to present a model in the granting of a franchise for investments wishing to enter the clothing sector through the opportunity available in the markets to participate with us.Franchising within the Kartonah brand offers multiple opportunities and benefits from both the investment and operating sides.",
+    "p1": "Guaranteed Capital",
+    "p2": "Low Risks",
+    "p3": "Fast profits"
+  },
+  "features": {
+    "title": "OPERATING FEATURES",
+    "desc": "In addition to the support we provide at the beginning of the investment, we continue to support to ensure that our brand is presented effectively and appropriately by:",
+    "p1": "sales and marketing",
+    "p2": "The support",
+    "p3": "The Development"
+  },
+  "investing": {
+    "title1": "INVESTING IN ",
+    "title2": "KARTONAH ",
+    "title3": "COMPANY",
+    "p": "In order to provide a wide base of options for franchise applicants in Kartonah Company, we have proposed an investment model according to the nature of the site and the target market segment in the region. It features an attractive and unified design and identity to create the overall impression of professionalism and quality associated with Kartonah Brand"
+  },
+  "offerFirst": {
+    "title1": "WHAT WOULD I OFFER AS A FRANCHISED INVESTOR",
+    "title2": "WITH KARTONAH BRAND?",
+    "desc": "When you sign the franchise contract with Kartonah Company, you have some commitment like cost of products , inventory, show room and all operations cost, whether in the pre-operation period or after the start of work. Our carefully crafted program is a turnkey program, where we do everything and let you focus on growing sales and maximizing profits.",
+    "p1": "Franchise",
+    "p2": "Foundation",
+    "p3": "Products",
+    "p4": "Operation",
+    "p5": "Rentals",
+    "p6": "Advertisement"
+  },
+  "offerSecond": {
+    "title1": "WHAT WOULD WE OFFER AS",
+    "title2": "KARTONAH BRAND",
+    "desc": "When you sign the franchise contract with Kartonah Company, you directly enjoy a number of support services .",
+    "p1": "Feasibility study",
+    "p2": "Professional conselling",
+    "p3": "Financial study",
+    "p4": "goods Supply",
+    "p5": "PrTrademark/ Brandingoducts",
+    "p6": "Marketing and spread",
+    "p7": "follow-up",
+    "p8": "Accounting",
+    "p9": "Help",
+    "p10": "Professional training",
+    "p11": "fast delivery",
+    "p12": "Support tools"
+  },
+  "continuousSupport": {
+    "title": "CONTINUOUS SUPPORT",
+    "name1": "Continuous Supply",
+    "name2": "Supervision",
+    "name3": "Meetings",
+    "p1": "Continuous supply to provide products continuously",
+    "p2": "Continuous operational supervision and control of sites",
+    "p3": "Regular meetings with franchisees (weekly / monthly)"
+  },
+  "continuousMarketing": {
+    "title": "Marketing Campaigns",
+    "name1": "Creating New Products",
+    "name2": "Community Participation",
+    "name3": "Meetings",
+    "p1": "We are create and management all Campaigns on all channels",
+    "p2": "We are working on developing a new products.",
+    "p3": "We will create interaction community on social media"
+  }
+}

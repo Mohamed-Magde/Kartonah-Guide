@@ -8,31 +8,33 @@ import time from "../../../../../assets/img/guide/solution/img-4@3x.png";
 
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-
+import { useTranslation } from "react-i18next";
 const GuideSolution = () => {
+  const [t] = useTranslation("common");
+
   const data = [
     {
       id: 1,
-      title: "Search",
-      desc: "The possibility of searching easily in addition to a variety of",
+      title: "solution.name-1",
+      desc: "solution.p-1",
       img: search,
     },
     {
       id: 2,
-      title: "Easiness",
-      desc: "Possibility to select small quantities",
+      title: "solution.name-2",
+      desc: "solution.p-2",
       img: easiness,
     },
     {
       id: 3,
-      title: "Comfort",
-      desc: "Close deals from your office",
+      title: "solution.name-3",
+      desc: "solution.p-3",
       img: comfort,
     },
     {
       id: 4,
-      title: "Time",
-      desc: "Save time and money needed to travel",
+      title: "solution.name-4",
+      desc: "solution.p-4",
       img: time,
     },
   ];
@@ -117,7 +119,7 @@ const GuideSolution = () => {
     <div className="guide-solution">
       <Fade right>
         {" "}
-        <h2 className="guide-title">The Solution</h2>
+        <h2 className="guide-title">{t("solution.title")}</h2>
       </Fade>
 
       <Zoom left cascade>
@@ -127,8 +129,8 @@ const GuideSolution = () => {
             return (
               <div className="guide-solution-block" key={id}>
                 <img src={img} alt="" />
-                <span>{title}</span>
-                <p>{desc}</p>
+                <span>{t(title)}</span>
+                <p>{t(desc)}</p>
               </div>
             );
           })}{" "}

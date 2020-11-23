@@ -6,19 +6,18 @@ i18n.use(LanguageDetector).init({
   resources: {
     en: {
       translations: {
-        "guide-banner": {
-          span: "Franchise Guide",
-          "h1-first": "kartonah Franchise",
-          "h1-second": "Guide",
-          "top-p":
-            "Kartonah Foundation belongs to one of the oldest commercial establishments in Turkey, which has over 8 years of experience in the fields of business and commercial activities. The institution is spread throughout the Middle East and North Africa.",
-          "bottom-first":
-            "However, this is <br /> not the end of <br /> our horizons",
-          "bottom-second":
-            "(this is not our limit), as we are looking to establish new branches by granting the franchise of the Kartonah brand to investors looking to spread and meet the worldwide market needs.",
-          "bottom-third":
-            " As a commitment to our society, we have put in place a franchise system that helps create job opportunities for young people with limited funding .",
-        },
+        "guide-banner-span": "Franchise Guide",
+        "guide-banner-h1-first": "kartonah Franchise",
+        "guide-banner-h1-second": "Guide",
+        "guide-banner-top-p":
+          "Kartonah Foundation belongs to one of the oldest commercial establishments in Turkey, which has over 8 years of experience in the fields of business and commercial activities. The institution is spread throughout the Middle East and North Africa.",
+        "guide-banner-bottom-first":
+          "However, this is <br /> not the end of <br /> our horizons",
+        "guide-banner-bottom-second":
+          "(this is not our limit), as we are looking to establish new branches by granting the franchise of the Kartonah brand to investors looking to spread and meet the worldwide market needs.",
+        "guide-banner-bottom-third":
+          " As a commitment to our society, we have put in place a franchise system that helps create job opportunities for young people with limited funding .",
+
         "guide-obs": {
           title: "The Obstacles (Difficulties)",
           data: [
@@ -47,17 +46,16 @@ i18n.use(LanguageDetector).init({
     ar: {
       translations: {
         "guide-banner": {
-          span: "hhhhhh",
-          "h1-first": "khhhhhhh",
-          "h1-second": "hhhh",
+          span: "تعريف بالمؤسسة",
+          "h1-first": " تعريف ",
+          "h1-second": "كرتونة",
           "top-p":
-            "Kartonah Foundation belongs to one of the oldest commercialasdasdasdasdadasdasdadasead throughout the Middle East and North Africa.",
-          "bottom-first":
-            "However, this is <br /> not the end of <br /> our horizons",
+            "تنتمـي مؤسسـة كرتونة إلـى واحـدة مـن أعـرق المؤسسـات التجارية فـي تركيا و التـي تمتلـك خبـرة تتجـاوز 8 أعوام فـي مجـالات الآعمـال و النشـاطات التجاريـة وتنتشر هذه المؤسسة فـي كافـة أنحـاء العالم ",
+          "bottom-first": "ولكـن هـذا <br /> يـس منتهـى <br /> فاقنا",
           "bottom-second":
-            "(this is not our limit), as we are looking to establish new branches by granting the franchise of the Kartonah brand to investors looking to spread and meet the worldwide market needs.",
+            "نحـن نتطلـع إلـى إنشـاء فـروع جديـدة عبـر منـح الامتياز التجـاري لعلامـة كرتونة للمسـتثمرين المتطلعيـن للإنتشـار وسـد حاجـات السـوق فـي منطقـة  الشرق الأوسط وأفريقيا ومــن ثــم التمــدد نحــو الأســواق العالميــة لتحقيــق رؤيــة المؤسســة فــي أن تكــون الجهـة الرائـدة فـي تصدير الملابس التركية بالجملة ",
           "bottom-third":
-            " As a commitment to our society, we have put in place a franchise system that helps create job opportunities for young people with limited funding .",
+            " التزامـا منـا تجـاه مجتمعنـا فقـد وضعنـا نظـام الإمتيـاز التجـاري بحيـث يسـاعد فـي إيجـاد فـرص عمـل للشـباب مـن ذوي رؤوس الأموال البسـيطة للعمل وبدء حياتهم بأقل المخاطر من خلال التدريب والتشـغيل .",
         },
         "guide-obs": {
           title: "The Obstacles (Difficulties)",

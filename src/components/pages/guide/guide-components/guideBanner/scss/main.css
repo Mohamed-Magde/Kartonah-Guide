@@ -7,6 +7,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .guide-banner-top-left .container {
@@ -95,6 +98,104 @@
   display: block;
   margin-top: 5em;
   margin-left: -1em;
+}
+
+.guide-banner .ar-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.guide-banner .ar-top span,
+.guide-banner .ar-top p,
+.guide-banner .ar-top h1,
+.guide-banner .ar-top h2 {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+.guide-banner .ar-top .guide-banner-top-right {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-left: -1em;
+}
+
+.guide-banner .ar-top .guide-banner-top-left {
+  grid-column: 2 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  text-align: right;
+  font-family: 'Cairo', sans-serif !important;
+}
+
+.ar span,
+.ar p,
+.ar h1,
+.ar h2 {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+.ar .guide-banner-bottom {
+  text-align: right;
+}
+
+.ar .guide-banner-bottom-block {
+  margin-right: 0;
+}
+
+.ar .guide-banner-bottom .container .first {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0;
+  width: 300px;
+}
+
+.arabic span,
+.arabic p,
+.arabic h1,
+.arabic h2,
+.arabic h3,
+.arabic h4,
+.arabic h5 {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+.guide-lang {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 2222;
+  width: 2em;
+  height: 2em;
+}
+
+.guide-lang button {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #41484F;
+  color: #FDDA2A;
+  cursor: pointer;
+  outline: none;
+}
+
+.guide-lang button:hover {
+  background-color: #FDDA2A;
+  color: #41484F;
 }
 
 @media only screen and (max-width: 600px) {

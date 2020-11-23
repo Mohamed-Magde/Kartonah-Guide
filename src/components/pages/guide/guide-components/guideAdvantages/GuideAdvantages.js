@@ -6,24 +6,27 @@ import icon from "../../../../../assets/img/icons/check.png";
 
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+
+import { useTranslation } from "react-i18next";
+
 const GuideAdvantages = () => {
+  const [t] = useTranslation("common");
+
   const data = {
     first: {
-      p:
-        "In order to develop our expansion plan, we seek to present a model in the granting of a franchise for investments wishing to enter the clothing sector through the opportunity available in the markets to participate with us.Franchising within the Kartonah brand offers multiple opportunities and benefits from both the investment and operating sides.",
+      p: "advantages.desc",
       list: [
-        { id: 1, text: "Guaranteed Capital" },
-        { id: 2, text: "Low Risks" },
-        { id: 3, text: "Fast profits" },
+        { id: 1, text: "advantages.p1" },
+        { id: 2, text: "advantages.p2" },
+        { id: 3, text: "advantages.p3" },
       ],
     },
     second: {
-      p:
-        "In addition to the support we provide at the beginning of the investment, we continue to support to ensure that our brand is presented effectively and appropriately by:",
+      p: "features.desc",
       list: [
-        { id: 1, text: "sales and marketing" },
-        { id: 2, text: "The support" },
-        { id: 3, text: "The Development" },
+        { id: 1, text: "features.p1" },
+        { id: 2, text: "features.p2" },
+        { id: 3, text: "features.p3" },
       ],
     },
   };
@@ -36,14 +39,14 @@ const GuideAdvantages = () => {
           </Zoom>
           <Fade right>
             <div className="guide-adv-first-content">
-              <h2 className="guide-title">Investment advantages</h2>
-              <p>{data.first.p}</p>
+              <h2 className="guide-title">{t("advantages.title")}</h2>
+              <p>{t(data.first.p)}</p>
               <ul>
                 {data.first.list.map((item) => {
                   const { id, text } = item;
                   return (
                     <li key={id}>
-                      <img src={icon} alt="" /> <span>{text}</span>
+                      <img src={icon} alt="" /> <span>{t(text)}</span>
                     </li>
                   );
                 })}
@@ -55,14 +58,14 @@ const GuideAdvantages = () => {
           <Zoom>
             {" "}
             <div className="guide-adv-first-content">
-              <h2 className="guide-title">Operating features</h2>
-              <p>{data.second.p}</p>
+              <h2 className="guide-title">{t("features.title")}</h2>
+              <p>{t(data.second.p)}</p>
               <ul>
                 {data.second.list.map((item) => {
                   const { id, text } = item;
                   return (
                     <li key={id}>
-                      <img src={icon} alt="" /> <span>{text}</span>
+                      <img src={icon} alt="" /> <span>{t(text)}</span>
                     </li>
                   );
                 })}

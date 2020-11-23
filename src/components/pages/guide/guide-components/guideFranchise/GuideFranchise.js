@@ -7,35 +7,35 @@ import bg from "../../../../../assets/img/guide/franchise/img-right@3x.png";
 
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import { useTranslation } from "react-i18next";
 
 const GuideFranchise = () => {
+  const [t] = useTranslation("common");
+
   const data = [
     {
       id: 1,
-      title: "Our Success",
-      p:
-        "After the success of the Kartonah experience, we developed an integrated system for granting and managing the franchise to ensure that our organization supports franchisees and to ensure that they succeed in presenting our brand adequately.",
+      title: "franchise.name1",
+      p: "franchise.p1",
       img: img1,
     },
     {
       id: 2,
-      title: "Our Vision",
-      p:
-        "Kartonah aspires to transfer its own and practically tested idea (brand) to independent companies and institutions, and these small companies establishes its own project under the same",
+      title: "franchise.name2",
+      p: "franchise.p2",
       img: img2,
     },
     {
       id: 3,
-      title: "Our Goal",
-      p:
-        "The goal is to open new horizons for growth and reach new target markets. In addition to that it gives the investor many advantages such as support, products and training.",
+      title: "franchise.name3",
+      p: "franchise.p3",
       img: img3,
     },
   ];
   return (
     <div className="guide-franchise">
       <div className="guide-franchise-left">
-        <h3 className="guide-title">Franchise</h3>
+        <h3 className="guide-title">{t("franchise.title")}</h3>
         <Slide right cascade>
           {data.map((item) => {
             const { id, title, p, img } = item;
@@ -44,8 +44,8 @@ const GuideFranchise = () => {
                 <img src={img} alt="" />
 
                 <div className="guide-franchise-left-block-content">
-                  <span>{title}</span>
-                  <p>{p}</p>
+                  <span>{t(title)}</span>
+                  <p>{t(p)}</p>
                 </div>
               </div>
             );

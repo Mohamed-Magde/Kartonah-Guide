@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GuideAdvantages from "./guide-components/guideAdvantages/GuideAdvantages";
 import GuideBanner from "./guide-components/guideBanner/GuideBanner";
 import GuideCompetitive from "./guide-components/guideCompetitive/GuideCompetitive";
@@ -12,24 +12,43 @@ import GuideProduct from "./guide-components/guideProducts/GuideProduct";
 import GuideSolution from "./guide-components/guideSolution/GuideSolution";
 import GuideStatistics from "./guide-components/guideStatistics/GuideStatistics";
 import GuideSupport from "./guide-components/guideSupport/GuideSupport";
+import { useTranslation } from "react-i18next";
 
 const Guide = () => {
+  const [t, i18n] = useTranslation("common");
+  const [lang, setLang] = useState("en");
+  const handleLang = (e) => {
+    setLang(e.target.value);
+    i18n.changeLanguage(e.target.value);
+  };
+
   return (
-    <>
-      <GuideBanner />
+    <div className={lang === "ar" && "arabic"}>
+      <div className="guide-lang">
+        {lang === "ar" ? (
+          <button value="en" onClick={handleLang}>
+            en
+          </button>
+        ) : (
+          <button value="ar" onClick={handleLang}>
+            ar
+          </button>
+        )}
+      </div>
+      <GuideBanner lang={lang} />
       <GuideObstacles />
       <GuideSolution />
       <MarketSize />
       <GuideStatistics />
-      <GuideFranchise />
+      <GuideFranchise lang={lang} />
       <GuideCompetitive />
       <GuideAdvantages />
       <GuideProduct />
-      <GuideInvesting />
+      <GuideInvesting lang={lang} />
       <GuideOffer />
       <GuideSupport />
       <GuideForm />
-    </>
+    </div>
   );
 };
 

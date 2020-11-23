@@ -10,43 +10,47 @@ import bg from "../../../../../assets/img/guide/bg-bottom-right-dark.png";
 
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
+
+import { useTranslation } from "react-i18next";
+
 const GuideCompetitive = () => {
+  const [t] = useTranslation("common");
+
   const data = [
     {
       id: 1,
-      title: "The first in the market",
-      p: "The first in the online wholesale marketplace",
+      title: "competitive.name1",
+      p: "competitive.p1",
       img: img1,
     },
     {
       id: 2,
-      title: "1000+ factories",
-      p: "Contract and cooperation with more than 1000 factories",
+      title: "competitive.name2",
+      p: "competitive.p2",
       img: img2,
     },
     {
       id: 3,
-      title: "Ease of use",
-      p: "Easy to search and to access to what you want",
+      title: "competitive.name3",
+      p: "competitive.p3",
       img: img3,
     },
     {
       id: 4,
-      title: "Categories",
-      p: "A list displaying different varieties and species",
+      title: "competitive.name4",
+      p: "competitive.p4",
       img: img4,
     },
     {
       id: 5,
-      title: "Handling speed",
-      p: "Through the presence of a safe and secure",
+      title: "competitive.name5",
+      p: "competitive.p5",
       img: img5,
     },
     {
       id: 6,
-      title: "order tracking",
-      p:
-        "The possibility of tracking the order from the beginning until it reaches ",
+      title: "competitive.name6",
+      p: "competitive.p6",
       img: img6,
     },
   ];
@@ -57,7 +61,7 @@ const GuideCompetitive = () => {
         <img src={bg} alt="" className="guide-competitive-bg" />
       </Zoom>
       <Flip right>
-        <h2 className="guide-title">Competitive advantages</h2>
+        <h2 className="guide-title">{t("competitive.title")}</h2>
       </Flip>
       <div className="container">
         <Zoom left cascade>
@@ -68,7 +72,7 @@ const GuideCompetitive = () => {
               <div key={id} className="guide-competitive-block">
                 <img src={img} alt="" />
                 <div className="guide-competitive-block-content">
-                  <span>{title}</span> <p>{p}</p>
+                  <span>{t(title)}</span> <p>{t(p)}</p>
                 </div>
               </div>
             );

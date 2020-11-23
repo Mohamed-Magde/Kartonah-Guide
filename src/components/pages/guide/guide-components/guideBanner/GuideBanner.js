@@ -1,31 +1,33 @@
 import React from "react";
 import "./scss/main.css";
 import img from "../../../../../assets/img/guide/banner/banner-bg@3x.png";
+import imgAr from "../../../../../assets/img/banners/banner-ar.png";
 import imgBottom from "../../../../../assets/img/guide/guide-banner-bottom.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-const GuideBanner = () => {
+import { useTranslation } from "react-i18next";
+
+const GuideBanner = ({ lang }) => {
+  const [t] = useTranslation("common");
   return (
-    <div className="guide-banner">
-      <div className="guide-banner-top">
+    <div className={lang === "ar" ? "guide-banner ar" : "guide-banner"}>
+      <div
+        className={
+          lang === "ar" ? "guide-banner-top ar-top" : "guide-banner-top"
+        }
+      >
         <div className="guide-banner-top-left">
           <Fade left>
             {" "}
             <div className="container">
-              <span>Franchise Guide</span>
+              <span>{t("banner.span")}</span>
 
               <h1>
-                kartonah Franchise <span>Guide</span>
+                {t("banner.first")} <span>{t("banner.second")}</span>
               </h1>
 
               <Zoom>
-                <p>
-                  Kartonah Foundation belongs to one of the oldest commercial
-                  establishments in Turkey, which has over 8 years of experience
-                  in the fields of business and commercial activities. The
-                  institution is spread throughout the Middle East and North
-                  Africa.
-                </p>
+                <p>{t("banner.p")}</p>
               </Zoom>
             </div>
           </Fade>
@@ -33,7 +35,11 @@ const GuideBanner = () => {
 
         <Fade right>
           <figure className="guide-banner-top-right">
-            <img src={img} alt="" />
+            {lang === "ar" ? (
+              <img src={imgAr} alt="" />
+            ) : (
+              <img src={img} alt="" />
+            )}
           </figure>
         </Fade>
       </div>
@@ -41,26 +47,19 @@ const GuideBanner = () => {
         <div className="container">
           <Fade left>
             <p className="guide-banner-bottom-block first">
-              However, this is <br />
-              not the end of <br />
-              our horizons
+              {t("banner.bottom-first")}
             </p>
           </Fade>
           <Zoom>
             <p className="guide-banner-bottom-block">
               {" "}
-              <span></span> (this is not our limit), as we are looking to
-              establish new branches by granting the franchise of the Kartonah
-              brand to investors looking to spread and meet the worldwide market
-              needs.
+              <span></span> {t("banner.bottom-second")}
             </p>
           </Zoom>
           <Fade right>
             <p className="guide-banner-bottom-block">
               {" "}
-              <span></span> As a commitment to our society, we have put in place
-              a franchise system that helps create job opportunities for young
-              people with limited funding .
+              <span></span> {t("banner.bottom-third")}
             </p>
           </Fade>
         </div>

@@ -7,27 +7,28 @@ import img3 from "../../../../../assets/img/guide/obs/price-tag@3x.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
+
+import { useTranslation } from "react-i18next";
 const GuideObstacles = () => {
+  const [t] = useTranslation("common");
+
   const data = [
     {
       id: 1,
-      title: "Qunatity",
-      desc:
-        "The difficulty of making a successful deal in small quantities in the Turkish trade",
+      title: "obs.first-name",
+      desc: "obs.first-p",
       img: img1,
     },
     {
       id: 2,
-      title: "Diversity",
-      desc:
-        "We offer Lack of diversity between Catagories , products, items and prices",
+      title: "obs.second-name",
+      desc: "obs.second-p",
       img: img2,
     },
     {
       id: 3,
-      title: "Prices",
-      desc:
-        "One of the most important problems facing customers and wholesale clothing merchants",
+      title: "obs.third-name",
+      desc: "obs.third-p",
       img: img3,
     },
   ];
@@ -37,7 +38,7 @@ const GuideObstacles = () => {
         <img src={img} alt="" className="guide-obs-img" />
       </Flip>
       <Zoom>
-        <h2 className="guide-title">The obstacles (Difficulties)</h2>
+        <h2 className="guide-title">{t("obs.title")}</h2>
       </Zoom>
       <div className="container">
         {data.map((item) => {
@@ -47,10 +48,10 @@ const GuideObstacles = () => {
               <div className="guide-obs-block" key={id}>
                 <img src={img} alt="" />
 
-                <span>{title}</span>
+                <span>{t(title)}</span>
 
                 <Fade left>
-                  <p>{desc}</p>
+                  <p>{t(desc)}</p>
                 </Fade>
               </div>
             </Zoom>

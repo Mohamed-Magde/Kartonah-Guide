@@ -10,46 +10,49 @@ import bg from "../../../../../assets/img/guide/backgrounds/curved-shape-bg@3x.p
 
 import Slide from "react-reveal/Slide";
 import Zoom from "react-reveal/Zoom";
+import { useTranslation } from "react-i18next";
 
 const GuideSupport = () => {
+  const [t] = useTranslation("common");
+
   const data = {
     first: [
       {
         id: 1,
-        title: "Continuous supply",
-        desc: "Continuous supply to provide products continuously",
+        title: "continuousSupport.name1",
+        desc: "continuousSupport.p1",
         img: img1,
       },
       {
         id: 2,
-        title: "Supervision",
-        desc: "Continuous operational supervision and control of sites",
+        title: "continuousSupport.name2",
+        desc: "continuousSupport.p2",
         img: img2,
       },
       {
         id: 3,
-        title: "Meetings",
-        desc: "Regular meetings with franchisees (weekly / monthly)",
+        title: "continuousSupport.name3",
+        desc: "continuousSupport.p3",
         img: img3,
       },
     ],
     second: [
       {
         id: 1,
-        title: "marketing campaigns",
-        desc: "We are create and management all Campaigns on all channels",
+        title: "continuousMarketing.name1",
+        desc: "continuousMarketing.p1",
         img: img4,
       },
       {
         id: 2,
-        title: "Creating new products",
-        desc: "We are working on developing a new products. ",
+        title: "continuousMarketing.name2",
+        desc: "continuousMarketing.p2",
         img: img5,
       },
       {
         id: 3,
-        title: "Community participation",
-        desc: "We will create interaction community on social media",
+        title: "continuousMarketing.name3",
+        desc: "continuousMarketing.p3",
         img: img6,
       },
     ],
@@ -57,7 +60,7 @@ const GuideSupport = () => {
   return (
     <div className="guide-support">
       <Zoom>
-        <h2 className="guide-title">Continuous support</h2>
+        <h2 className="guide-title">{t("continuousSupport.title")}</h2>
       </Zoom>
       <Slide left cascade>
         <div className="container">
@@ -66,15 +69,15 @@ const GuideSupport = () => {
             return (
               <div className="guide-support-block" key={id}>
                 <img src={img} alt="" />
-                <span>{title}</span>
-                <p>{desc}</p>
+                <span>{t(title)}</span>
+                <p>{t(desc)}</p>
               </div>
             );
           })}
         </div>
       </Slide>
       <Zoom>
-        <h2 className="guide-title">marketing support</h2>
+        <h2 className="guide-title">{t("continuousMarketing.title")}</h2>
       </Zoom>
       <Slide right cascade>
         <div className="container">
@@ -83,8 +86,8 @@ const GuideSupport = () => {
             return (
               <div className="guide-support-block" key={id}>
                 <img src={img} alt="" />
-                <span>{title}</span>
-                <p>{desc}</p>
+                <span>{t(title)}</span>
+                <p>{t(desc)}</p>
               </div>
             );
           })}

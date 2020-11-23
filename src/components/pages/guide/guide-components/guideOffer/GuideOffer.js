@@ -6,7 +6,12 @@ import bgDark from "../../../../../assets/img/guide/backgrounds/bg-left-dark@3x.
 import bgLight from "../../../../../assets/img/guide/backgrounds/bg-right-light@3x.png";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+
+import { useTranslation } from "react-i18next";
+
 const GuideOffer = () => {
+  const [t] = useTranslation("common");
+
   const data = {
     icon: (
       <svg
@@ -46,37 +51,35 @@ const GuideOffer = () => {
       </svg>
     ),
     first: {
-      title1: "What would I offer as a franchised investor",
-      title2: "with Kartonah brand?",
-      desc:
-        "When you sign the franchise contract with Kartonah Company, you have some commitment like cost of products  , inventory, show room and all operations cost, whether in the pre-operation period or after the start of work. Our carefully crafted program is a turnkey program, where we do everything and let you focus on growing sales and maximizing profits.",
+      title1: "offerFirst.title1",
+      title2: "offerFirst.title2",
+      desc: "offerFirst.desc",
       list: [
-        { id: 1, text: "Franchise" },
-        { id: 2, text: "Operation" },
-        { id: 3, text: "Foundation" },
-        { id: 4, text: "Rentals" },
-        { id: 5, text: "Products" },
-        { id: 6, text: "Advertisement" },
+        { id: 1, text: "offerFirst.p1" },
+        { id: 2, text: "offerFirst.p2" },
+        { id: 3, text: "offerFirst.p3" },
+        { id: 4, text: "offerFirst.p4" },
+        { id: 5, text: "offerFirst.p5" },
+        { id: 6, text: "offerFirst.p6" },
       ],
     },
     second: {
-      title1: "What would we offer as",
-      title2: "Kartonah brand",
-      desc:
-        "When you sign the franchise contract with Kartonah Company, you directly enjoy a number of support services .",
+      title1: "offerSecond.title1",
+      title2: "offerSecond.title2",
+      desc: "offerSecond.desc",
       list: [
-        { id: 1, text: "Feasibility study" },
-        { id: 2, text: "Professional conselling" },
-        { id: 3, text: "Financial study" },
-        { id: 4, text: "goods Supply" },
-        { id: 5, text: "PrTrademark/ Brandingoducts" },
-        { id: 6, text: "Marketing and spread" },
-        { id: 7, text: "Accounting" },
-        { id: 8, text: "Help" },
-        { id: 9, text: "Professional training" },
-        { id: 10, text: "fast delivery" },
-        { id: 11, text: "Support tools" },
-        { id: 12, text: "follow-up" },
+        { id: 1, text: "offerSecond.p1" },
+        { id: 2, text: "offerSecond.p2" },
+        { id: 3, text: "offerSecond.p3" },
+        { id: 4, text: "offerSecond.p3" },
+        { id: 5, text: "offerSecond.p5" },
+        { id: 6, text: "offerSecond.p6" },
+        { id: 7, text: "offerSecond.p7" },
+        { id: 8, text: "offerSecond.p8" },
+        { id: 9, text: "offerSecond.p9" },
+        { id: 10, text: "offerSecond.p10" },
+        { id: 11, text: "offerSecond.p11" },
+        { id: 12, text: "offerSecond.p12" },
       ],
     },
   };
@@ -87,7 +90,7 @@ const GuideOffer = () => {
           <Fade right>
             <div className="guide-offer-top-left">
               <h2 className="guide-offer-title">
-                {data.first.title1} <span>{data.first.title2}</span>
+                {t(data.first.title1)} <span>{t(data.first.title2)}</span>
               </h2>
               <p>{data.first.desc}</p>
               <ul>
@@ -97,7 +100,7 @@ const GuideOffer = () => {
                     <li key={id}>
                       {" "}
                       <span> {data.icon} </span>
-                      <p>{text}</p>
+                      <p>{t(text)}</p>
                     </li>
                   );
                 })}
@@ -125,7 +128,7 @@ const GuideOffer = () => {
           <Zoom>
             <div className="guide-offer-bottom-right">
               <h2 className="guide-offer-title">
-                {data.second.title1} <span>{data.second.title2}</span>
+                {t(data.second.title1)} <span>{t(data.second.title2)}</span>
               </h2>
               <p>{data.second.desc}</p>
               <ul>
@@ -134,7 +137,7 @@ const GuideOffer = () => {
                   return (
                     <li key={id}>
                       {" "}
-                      <span>{data.icon}</span> <p>{text}</p>
+                      <span>{data.icon}</span> <p>{t(text)}</p>
                     </li>
                   );
                 })}
