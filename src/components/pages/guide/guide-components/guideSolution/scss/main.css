@@ -20,7 +20,7 @@
 
 .guide-solution-block {
   width: 225px;
-  margin-right: 4em;
+  margin-right: 2em;
 }
 
 .guide-solution-block:nth-child(4) {
@@ -38,8 +38,60 @@
   font-size: 24px;
 }
 
-.guide-solution-block img {
+.guide-solution-block-icon-wrapper {
   width: 92.62px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  height: 108.74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-solution-block-icon-wrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guide-solution-block-icon-wrapper-icon {
+  position: relative;
+  z-index: 2;
+  margin-bottom: .5em;
+}
+
+.guide-solution-block-icon-wrapper-icon svg:hover path {
+  fill: #fff;
+}
+
+.guide-solution-block-icon-wrapper .guide-solution-svg path,
+.guide-solution-block-icon-wrapper .guide-solution-arrow path {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.guide-solution-block-icon-wrapper:hover .guide-solution-svg path {
+  fill: #ffffff;
+}
+
+.guide-solution-block-icon-wrapper:hover .guide-solution-arrow path {
+  fill: #41484F;
+  -webkit-box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.2);
+}
+
+.guide-solution-block-content-wrapper {
+  margin-top: .5em;
+  height: 100px;
 }
 
 .guide-solution .curve-first,
@@ -49,13 +101,13 @@
 }
 
 .guide-solution .curve-first {
-  left: 18%;
+  left: 16.7%;
   top: 0;
 }
 
 .guide-solution .curve-third {
   top: 0;
-  right: 18%;
+  right: 16.5%;
 }
 
 @media only screen and (max-width: 600px) {

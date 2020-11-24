@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import GuideAdvantages from "./guide-components/guideAdvantages/GuideAdvantages";
 import GuideBanner from "./guide-components/guideBanner/GuideBanner";
 import GuideCompetitive from "./guide-components/guideCompetitive/GuideCompetitive";
@@ -13,6 +14,7 @@ import GuideSolution from "./guide-components/guideSolution/GuideSolution";
 import GuideStatistics from "./guide-components/guideStatistics/GuideStatistics";
 import GuideSupport from "./guide-components/guideSupport/GuideSupport";
 import { useTranslation } from "react-i18next";
+import Navbar from "../../layout/nav/Navbar";
 
 const Guide = () => {
   const [t, i18n] = useTranslation("common");
@@ -35,6 +37,7 @@ const Guide = () => {
           </button>
         )}
       </div>
+      <Navbar />
       <GuideBanner lang={lang} />
       <GuideObstacles />
       <GuideSolution />

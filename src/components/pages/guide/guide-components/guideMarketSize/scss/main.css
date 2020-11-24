@@ -3,81 +3,179 @@
   text-align: center;
 }
 
-.guide-market .guide-title {
-  margin-top: 3em;
+.guide-market-desc {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  color: #41484F;
+  margin-bottom: -6em;
+  z-index: -1;
 }
 
-.guide-market-img {
+.guide-market-desc-right {
+  margin-left: 2em;
+}
+
+.guide-market-desc-right p {
+  font-size: 140px;
+  font-weight: 900;
+}
+
+.guide-market-desc-right p span {
+  font-weight: 300;
+}
+
+.guide-market-desc-left p {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.guide-market-desc-left span {
   display: block;
-  margin: 0 auto;
-  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .guide-market-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.guide-market-block:nth-child(2) img {
-  display: block;
-  width: 255px;
-  height: 236px;
-  margin-top: -1em;
+.guide-market-block-shape {
+  position: absolute;
+  right: 20%;
+  top: -1em;
+  width: 19em !important;
+  z-index: -22;
 }
 
-.guide-market-block:nth-child(2) p {
-  margin-left: -.5em;
-}
-
-.guide-market-block:nth-child(2) p span {
-  margin-left: 0em;
-}
-
-.guide-market-block:nth-child(2) p .border {
-  left: .07em !important;
-  margin: 0;
-  bottom: .15em !important;
-}
-
-.guide-market-block:nth-child(1) img {
-  display: block;
-  width: 304px;
-  height: 163px;
+.guide-market-block:nth-child(2) .guide-market-block-shape {
+  top: .5em;
+  right: 10%;
 }
 
 .guide-market-block p {
-  font-size: 123px;
+  font-size: 100px;
   color: #FDDA2A;
-  margin-left: -.75em;
-  z-index: 222;
-  position: relative;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
-.guide-market-block p .market-us-dollars {
-  position: absolute;
-  bottom: 3em;
-  right: -2em;
-  font-size: 14px;
-  display: inline-block;
-  color: #fff;
-  background-color: #41484F;
-  padding: .2em .3em;
-  margin-left: -3em;
+.guide-market-block span {
+  display: block;
 }
 
-.guide-market-block p .border {
+.guide-market-block-border {
   padding: 0;
   margin: 0;
   background-color: transparent;
   position: absolute;
-  bottom: .07em;
-  left: .05em;
+  top: -.05em;
+  left: .1em;
   -webkit-text-fill-color: transparent;
-  font-size: 123px;
+  font-size: 100px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #41484F;
   z-index: -1;
+}
+
+.guide-market-block img {
+  width: 50%;
+}
+
+.guide-market-block-wrapper {
+  position: relative;
+  margin-left: -5em;
+}
+
+.guide-market-block-wrapper .market-us-dollars {
+  z-index: 22222;
+  position: absolute;
+  bottom: 2em;
+  right: 0em;
+  font-size: 14px;
+  background-color: #41484F;
+  color: #fff;
+  padding: .2em .75em;
+}
+
+.guide-market-block-wrapper .market-area {
+  z-index: 22222;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0em;
+  right: -.7em;
+  font-size: 19px;
+  font-weight: bold;
+  color: #41484F;
+  padding: .5em 1em;
+}
+
+.guide-market-block-wrapper .market-area::after {
+  content: '';
+  position: absolute;
+  right: 90%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 160%;
+  height: 1px;
+  background-color: #41484F;
+}
+
+.guide-market-block-wrapper .market-area::before {
+  content: '';
+  position: absolute;
+  right: 85%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #41484F;
+}
+
+.guide-market-square, .guide-market-shape {
+  position: absolute;
+}
+
+.guide-market-square {
+  width: 10rem;
+  height: 10rem;
+  right: 0%;
+  top: 50%;
+  z-index: 222;
+}
+
+.guide-market-shape {
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  top: 10%;
+}
+
+.guide-market .guide-title {
+  margin-top: 3em;
+  margin-bottom: 0em;
+}
+
+.guide-market-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .guide-market .container {
@@ -87,15 +185,62 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
+  .guide-title {
+    margin-bottom: 1em !important;
+  }
   .guide-market {
     margin-top: 8em;
+    overflow: hidden;
     text-align: center;
+    width: 100vw;
+  }
+  .guide-market-desc {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    color: #41484F;
+    margin-bottom: -6em;
+    z-index: -1;
+  }
+  .guide-market-desc-right {
+    margin-left: 0em;
+  }
+  .guide-market-desc-right p {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  .guide-market-desc-right p span {
+    font-weight: 300;
+  }
+  .guide-market-desc-left {
+    text-align: center;
+  }
+  .guide-market-desc-left p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .guide-market-desc-left span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
   }
   .guide-market .guide-title {
     margin-top: 3em;
@@ -103,75 +248,81 @@
   .guide-market-img {
     display: block;
     margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
   }
   .guide-market-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .guide-market-block:nth-child(2) img {
-    display: block;
-    width: 255px;
-    height: 236px;
-    margin-top: -1em;
-  }
-  .guide-market-block:nth-child(2) p {
-    margin-left: 0em;
-    margin-top: -.5em;
-  }
-  .guide-market-block:nth-child(2) p span {
-    margin-left: 16em;
-    margin-top: -5em;
-    display: block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-    z-index: 22;
-  }
-  .guide-market-block:nth-child(2) p .border {
-    bottom: .15em !important;
-    margin: 0;
-    display: none;
-  }
-  .guide-market-block:nth-child(1) img {
-    display: block;
-    width: 304px;
-    height: 163px;
-  }
   .guide-market-block p {
-    font-size: 123px;
+    font-size: 100px;
     color: #FDDA2A;
-    margin-left: 0em;
-    z-index: 222;
-    position: relative;
+    font-weight: bold;
+    font-family: sans-serif;
   }
-  .guide-market-block p span {
-    margin-left: 16em;
-    margin-top: -5em;
+  .guide-market-block span {
     display: block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-    z-index: 22;
   }
-  .guide-market-block p .border {
+  .guide-market-block-border {
     padding: 0;
     margin: 0;
     background-color: transparent;
     position: absolute;
-    bottom: -.25em;
-    left: .05em;
+    top: -.05em;
+    left: .1em;
     -webkit-text-fill-color: transparent;
-    font-size: 123px;
+    font-size: 100px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #41484F;
     z-index: -1;
+  }
+  .guide-market-block img {
+    width: 70%;
+  }
+  .guide-market-block-wrapper {
+    position: relative;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .guide-market-block-wrapper .market-us-dollars {
+    z-index: 22222;
+    position: absolute;
+    bottom: 2em;
+    right: -4em;
+    font-size: 14px;
+    background-color: #41484F;
+    color: #fff;
+    padding: .5em 1em;
+  }
+  .guide-market-block-wrapper .market-area {
+    z-index: 22222;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60%;
+    left: -2em;
+    font-size: 14px;
+    background-color: #41484F;
+    color: #fff;
+    padding: .5em 1em;
+    width: 5em;
+    height: 3em;
+  }
+  .guide-market-block-wrapper .market-area::after {
+    display: none;
+  }
+  .guide-market-block-wrapper .market-area::before {
+    display: none;
   }
   .guide-market .container {
     display: -webkit-box;

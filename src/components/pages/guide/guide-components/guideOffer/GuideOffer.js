@@ -92,7 +92,7 @@ const GuideOffer = () => {
               <h2 className="guide-offer-title">
                 {t(data.first.title1)} <span>{t(data.first.title2)}</span>
               </h2>
-              <p>{data.first.desc}</p>
+              <p>{t(data.first.desc)}</p>
               <ul>
                 {data.first.list.map((item) => {
                   const { id, text } = item;
@@ -130,7 +130,7 @@ const GuideOffer = () => {
               <h2 className="guide-offer-title">
                 {t(data.second.title1)} <span>{t(data.second.title2)}</span>
               </h2>
-              <p>{data.second.desc}</p>
+              <p>{t(data.second.desc)}</p>
               <ul>
                 {data.second.list.map((item) => {
                   const { id, text } = item;

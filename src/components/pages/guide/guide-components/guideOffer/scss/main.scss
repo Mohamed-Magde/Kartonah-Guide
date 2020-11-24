@@ -116,13 +116,32 @@ $colorSix:#F9F9F9;
   }
 }
 
+
+.arabic {
+  .guide-offer {
+    text-align: right;
+
+    &-top {
+      &-left {
+        width: 500px;
+      }
+
+    }
+
+    &-bottom {}
+
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .guide-offer {
     color: $colorTwo;
     padding-top: 7em;
     padding-bottom: 4em;
     position: relative;
-    padding-left: 10%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 
     &-title {
       text-transform: uppercase;
@@ -130,6 +149,7 @@ $colorSix:#F9F9F9;
 
       span {
         font-weight: 200;
+        display: block;
       }
 
       margin-bottom: .5em;
@@ -139,14 +159,16 @@ $colorSix:#F9F9F9;
       color: #747474;
       font-size: 14px;
       display: block;
+      margin: 0 auto;
       margin-bottom: 1.5em;
-      width: 70%;
+      width: 100%;
+
     }
 
     ul {
-      width: 100%;
+      width: 90%;
       display: grid;
-      grid-template-columns: repeat(2, 200px);
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
       justify-content: start;
       margin: 0 auto;
@@ -158,6 +180,7 @@ $colorSix:#F9F9F9;
         justify-content: flex-start;
         margin-bottom: .5em;
 
+        text-align: left;
 
         p {
           margin: 0;
@@ -166,7 +189,7 @@ $colorSix:#F9F9F9;
         span {
           display: flex;
 
-          margin-right: .5em;
+          width: 10%;
         }
       }
     }

@@ -40,39 +40,53 @@ $colorSix:#F9F9F9;
     padding-left: 5%;
     text-align: left;
     box-shadow: 0px 1px 6px rgba(#000, .2);
+    position: relative;
 
-    &:nth-child(3) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 2%;
+
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0rem;
+      height: 0rem;
+      background-color: $colorOne;
+      border-radius: 50%;
+      transition: all .5s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0%;
+
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0px;
+      height: 0rem;
+      background-color: $colorOne;
+      border-radius: 50%;
+      transition: all .5s;
+    }
+
+    img {
       position: relative;
+      z-index: 2;
+    }
 
+
+
+    &:hover {
       &::after {
-        content: '';
-        position: absolute;
-        left: 6%;
-
-        top: 50%;
-        transform: translateY(-50%);
-        width: 3.7rem;
-        height: 3.7rem;
-        background-color: $colorOne;
-        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
       }
 
       &::before {
-        content: '';
-        position: absolute;
-        left: 0%;
-
-        top: 50%;
-        transform: translateY(-50%);
         width: 2px;
         height: 3.7rem;
-        background-color: $colorOne;
-        border-radius: 50%;
-      }
 
-      img {
-        position: relative;
-        z-index: 2;
       }
     }
 
@@ -131,27 +145,32 @@ $colorSix:#F9F9F9;
       display: flex;
       align-items: center;
       border-radius: 10px;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       padding-left: 5%;
+      padding-right: 2%;
       text-align: left;
       box-shadow: 0px 1px 6px rgba(#000, .2);
+
+      &:hover {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 2%;
+
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10rem;
+          height: 10rem;
+          background-color: $colorOne;
+          border-radius: 50%;
+        }
+      }
 
       &:nth-child(3) {
         position: relative;
 
-        &::after {
-          content: '';
-          position: absolute;
-          left: 6%;
 
-          top: 50%;
-          transform: translateY(-50%);
-          width: 3.7rem;
-          height: 3.7rem;
-          background-color: $colorOne;
-          border-radius: 50%;
-        }
 
         &::before {
           content: '';

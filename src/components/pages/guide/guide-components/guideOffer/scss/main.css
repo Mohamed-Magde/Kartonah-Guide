@@ -113,13 +113,23 @@
   right: -3%;
 }
 
+.arabic .guide-offer {
+  text-align: right;
+}
+
+.arabic .guide-offer-top-left {
+  width: 500px;
+}
+
 @media only screen and (max-width: 600px) {
   .guide-offer {
     color: #41484F;
     padding-top: 7em;
     padding-bottom: 4em;
     position: relative;
-    padding-left: 10%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .guide-offer-title {
     text-transform: uppercase;
@@ -128,20 +138,22 @@
   }
   .guide-offer-title span {
     font-weight: 200;
+    display: block;
   }
   .guide-offer p {
     color: #747474;
     font-size: 14px;
     display: block;
+    margin: 0 auto;
     margin-bottom: 1.5em;
-    width: 70%;
+    width: 100%;
   }
   .guide-offer ul {
-    width: 100%;
+    width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (200px)[2];
-        grid-template-columns: repeat(2, 200px);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -162,6 +174,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-bottom: .5em;
+    text-align: left;
   }
   .guide-offer ul li p {
     margin: 0;
@@ -170,7 +183,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: .5em;
+    width: 10%;
   }
   .guide-offer .container {
     display: -webkit-box;

@@ -11,93 +11,196 @@ $colorSix:#F9F9F9;
 
   text-align: center;
 
+  &-desc {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+    color: $colorTwo;
+    margin-bottom: -6em;
+    z-index: -1;
+
+    &-right {
+      margin-left: 2em;
+
+      p {
+
+        font-size: 140px;
+        font-weight: 900;
+
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+
+    &-left {
+
+      p {
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+
+      span {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 200;
+      }
+    }
+  }
+
+  &-block {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+
+    &-shape {
+
+      position: absolute;
+      right: 20%;
+      top: -1em;
+      width: 19em !important;
+      z-index: -22;
+
+    }
+
+    &:nth-child(2) {
+
+
+      .guide-market-block-shape {
+        top: .5em;
+        right: 10%;
+      }
+    }
+
+    p {
+      font-size: 100px;
+      color: $colorOne;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    span {
+      display: block;
+
+    }
+
+    &-border {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      position: absolute;
+      top: -.05em;
+      left: .1em;
+      -webkit-text-fill-color: transparent;
+      font-size: 100px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $colorTwo;
+      z-index: -1;
+    }
+
+    img {
+      width: 50%;
+
+    }
+
+    &-wrapper {
+      position: relative;
+      margin-left: -5em;
+
+      .market-us-dollars {
+        z-index: 22222;
+        position: absolute;
+        bottom: 2em;
+        right: 0em;
+        font-size: 14px;
+        background-color: $colorTwo;
+        color: #fff;
+        padding: .2em .75em;
+      }
+
+      .market-area {
+        z-index: 22222;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0em;
+        right: -.7em;
+        font-size: 19px;
+        font-weight: bold;
+
+        color: $colorTwo;
+        padding: .5em 1em;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 90%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 160%;
+          height: 1px;
+          background-color: $colorTwo;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: 85%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $colorTwo;
+        }
+      }
+    }
+
+
+  }
+
+
+  &-square,
+  &-shape {
+    position: absolute;
+  }
+
+  &-square {
+    width: 10rem;
+    height: 10rem;
+    right: 0%;
+    top: 50%;
+    z-index: 222;
+  }
+
+  &-shape {
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    top: 10%;
+  }
+
   .guide-title {
     margin-top: 3em;
+    margin-bottom: 0em;
   }
 
   &-img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
   }
 
-  &-block {
-    display: flex;
 
-    &:nth-child(2) {
-      img {
-        display: block;
-        width: 255px;
-        height: 236px;
-        margin-top: -1em;
-      }
-
-      p {
-        margin-left: -.5em;
-
-        span {
-          margin-left: 0em;
-        }
-
-        .border {
-          left: .07em !important;
-          margin: 0;
-          bottom: .15em !important;
-        }
-      }
-    }
-
-    &:nth-child(1) {
-      img {
-        display: block;
-        width: 304px;
-        height: 163px;
-
-      }
-    }
-
-    p {
-      font-size: 123px;
-      color: $colorOne;
-      margin-left: -.75em;
-      z-index: 222;
-
-
-      .market-us-dollars {
-        position: absolute;
-        bottom: 3em;
-        right: -2em;
-        font-size: 14px;
-        display: inline-block;
-        color: #fff;
-        background-color: $colorTwo;
-        padding: .2em .3em;
-        margin-left: -3em;
-      }
-
-      position: relative;
-
-      .border {
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-        position: absolute;
-        bottom: .07em;
-        left: .05em;
-        -webkit-text-fill-color: transparent;
-        font-size: 123px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $colorTwo;
-        z-index: -1;
-
-      }
-    }
-  }
 
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
   }
 }
@@ -105,10 +208,58 @@ $colorSix:#F9F9F9;
 
 
 @media only screen and (max-width: 600px) {
+  .guide-title {
+    margin-bottom: 1em !important;
+  }
+
   .guide-market {
     margin-top: 8em;
-
+    overflow: hidden;
     text-align: center;
+    width: 100vw;
+
+    &-desc {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2em;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      color: $colorTwo;
+      margin-bottom: -6em;
+      z-index: -1;
+
+      &-right {
+        margin-left: 0em;
+
+        p {
+
+          font-size: 60px;
+          font-weight: 900;
+
+          span {
+            font-weight: 300;
+          }
+        }
+      }
+
+      &-left {
+        text-align: center;
+
+        p {
+          font-size: 1.7rem;
+          font-weight: bold;
+        }
+
+        span {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 200;
+        }
+      }
+    }
 
     .guide-title {
       margin-top: 3em;
@@ -117,85 +268,87 @@ $colorSix:#F9F9F9;
     &-img {
       display: block;
       margin: 0 auto;
+      margin-top: 3em;
+      width: 100%;
     }
 
     &-block {
       display: flex;
+      position: relative;
+      align-items: center;
       flex-direction: column;
 
-      &:nth-child(2) {
-        img {
-          display: block;
-          width: 255px;
-          height: 236px;
-          margin-top: -1em;
+      p {
+        font-size: 100px;
+        color: $colorOne;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+
+      span {
+        display: block;
+
+      }
+
+      &-border {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        position: absolute;
+        top: -.05em;
+        left: .1em;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $colorTwo;
+        z-index: -1;
+      }
+
+      img {
+        width: 70%;
+
+      }
+
+      &-wrapper {
+        position: relative;
+        order: -1;
+
+        .market-us-dollars {
+          z-index: 22222;
+          position: absolute;
+          bottom: 2em;
+          right: -4em;
+          font-size: 14px;
+          background-color: $colorTwo;
+          color: #fff;
+          padding: .5em 1em;
         }
 
+        .market-area {
+          z-index: 22222;
+          text-transform: uppercase;
+          position: absolute;
+          top: 60%;
+          left: -2em;
+          font-size: 14px;
+          background-color: $colorTwo;
+          color: #fff;
+          padding: .5em 1em;
+          width: 5em;
+          height: 3em;
 
-        p {
-          margin-left: 0em;
-          margin-top: -.5em;
-
-          span {
-            margin-left: 16em;
-            margin-top: -5em;
-            display: block;
-            width: fit-content;
-            position: relative;
-            z-index: 22;
-          }
-
-          .border {
-            bottom: .15em !important;
-            margin: 0;
+          &::after {
             display: none;
           }
-        }
-      }
 
-      &:nth-child(1) {
-        img {
-          display: block;
-          width: 304px;
-          height: 163px;
+          &::before {
+            display: none;
+          }
 
         }
       }
 
-      p {
-        font-size: 123px;
-        color: $colorOne;
-        margin-left: 0em;
 
-        z-index: 222;
-
-
-        span {
-          margin-left: 16em;
-          margin-top: -5em;
-          display: block;
-          width: fit-content;
-          position: relative;
-          z-index: 22;
-        }
-
-        position: relative;
-
-        .border {
-          padding: 0;
-          margin: 0;
-          background-color: transparent;
-          position: absolute;
-          bottom: -.25em;
-          left: .05em;
-          -webkit-text-fill-color: transparent;
-          font-size: 123px;
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: $colorTwo;
-          z-index: -1;
-
-        }
-      }
     }
 
     .container {

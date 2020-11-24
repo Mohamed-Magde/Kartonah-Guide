@@ -8,8 +8,10 @@
 }
 
 .guide-adv .guide-title {
-  margin-bottom: .5em;
+  margin-bottom: .5em !important;
   text-transform: uppercase;
+  display: block;
+  width: 100%;
 }
 
 .guide-adv p {
@@ -62,6 +64,23 @@
 
 .guide-adv-img {
   width: 45%;
+}
+
+.arabic .guide-adv {
+  text-align: right;
+}
+
+.arabic .guide-adv li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.arabic .guide-adv li img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,6 +149,9 @@
   }
   .guide-adv-first-content {
     width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .guide-adv-first-content img {
     width: 2em;

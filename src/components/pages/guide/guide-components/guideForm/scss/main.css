@@ -176,6 +176,7 @@
 
 @media only screen and (max-width: 600px) {
   .guide-form {
+    text-align: center;
     padding-top: 4em;
     padding-bottom: 4em;
     color: #41484F;
@@ -188,6 +189,8 @@
     display: block;
     font-size: 2rem;
     margin-top: 1.5em;
+    font-family: "Cairo";
+    margin-bottom: .5em;
   }
   .guide-form-right input {
     background-color: #F2F2F2;
@@ -196,6 +199,7 @@
     height: 50px;
     border-radius: 5px;
     padding-left: 1em;
+    font-family: "Cairo";
   }
   .guide-form-right input::-webkit-input-placeholder {
     color: #CFCFCF;
@@ -220,19 +224,19 @@
   }
   .guide-form-right textarea::-webkit-input-placeholder {
     color: #CFCFCF;
-    font-family: "QuireSansW01-Regular", sans-serif;
+    font-family: "Cairo";
   }
   .guide-form-right textarea:-ms-input-placeholder {
     color: #CFCFCF;
-    font-family: "QuireSansW01-Regular", sans-serif;
+    font-family: "Cairo";
   }
   .guide-form-right textarea::-ms-input-placeholder {
     color: #CFCFCF;
-    font-family: "QuireSansW01-Regular", sans-serif;
+    font-family: "Cairo";
   }
   .guide-form-right textarea::placeholder {
     color: #CFCFCF;
-    font-family: "QuireSansW01-Regular", sans-serif;
+    font-family: "Cairo";
   }
   .guide-form-right-title {
     font-size: 30px;
@@ -244,16 +248,17 @@
     background-color: #FDDA2A;
   }
   .guide-form-left {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .guide-form-left h2 {
-    width: 90%;
+    width: 100%;
   }
   .guide-form-left p {
     font-size: 14px;
     color: #B2B2B2;
     display: block;
-    width: 80%;
+    width: 100%;
   }
   .guide-form-left ul {
     margin-top: 4em;
@@ -268,7 +273,11 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-top: 1em;
+    margin-top: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .guide-form-left ul li:nth-child(1) p {
     font-weight: bold;
@@ -277,7 +286,6 @@
     color: #41484F;
     display: inline;
     font-size: 12px;
-    width: 50%;
   }
   .guide-form-left ul li span {
     position: relative;
@@ -292,7 +300,8 @@
             justify-content: center;
     width: 40px;
     height: 40px;
-    margin-right: 2em;
+    margin-right: 0em;
+    margin-bottom: 1em;
   }
   .guide-form-left ul li span svg {
     position: absolute;
@@ -323,16 +332,16 @@
   }
   .guide-form .guide-form-submit {
     display: block;
+    margin: 0 auto;
     margin-top: 1.5em;
     background-color: #FDDA2A;
-    width: 174px;
+    width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 14px;
     color: #41484F;
     text-transform: uppercase;
     display: -ms-grid;
     display: grid;
-    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

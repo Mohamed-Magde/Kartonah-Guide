@@ -43,10 +43,12 @@
 @media only screen and (max-width: 600px) {
   .guide-investing {
     position: relative;
-    height: 60vh;
+    height: 50vh;
     margin-bottom: 2em;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
     padding-top: 5em;
+    text-align: center;
   }
   .guide-investing-bg {
     position: absolute;
@@ -54,6 +56,9 @@
     top: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
   }
   .guide-investing .container {
     position: relative;
@@ -61,8 +66,8 @@
   }
   .guide-investing-title {
     display: inline-block;
-    width: 50%;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: .5em;
@@ -74,8 +79,8 @@
   }
   .guide-investing-desc {
     display: block;
-    width: 80%;
-    font-size: 14px;
+    width: 100%;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 import React from "react";
 import "./scss/main.css";
 import img from "../../../../../assets/img/guide/banner/banner-bg@3x.png";
-import imgAr from "../../../../../assets/img/banners/banner-ar.png";
+import imgAr from "../../../../../assets/img/guide/banner/banner-bg-arabic.png";
 import imgBottom from "../../../../../assets/img/guide/guide-banner-bottom.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";

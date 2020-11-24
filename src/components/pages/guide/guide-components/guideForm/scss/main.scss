@@ -12,6 +12,7 @@ $colorSix:#F9F9F9;
   padding-bottom: 4em;
   color: $colorTwo;
 
+
   &-right {
     width: 445px;
 
@@ -146,6 +147,7 @@ $colorSix:#F9F9F9;
 
 @media only screen and (max-width: 600px) {
   .guide-form {
+    text-align: center;
     padding-top: 4em;
     padding-bottom: 4em;
     color: $colorTwo;
@@ -158,6 +160,8 @@ $colorSix:#F9F9F9;
         display: block;
         font-size: 2rem;
         margin-top: 1.5em;
+        font-family: "Cairo";
+        margin-bottom: .5em;
       }
 
       input {
@@ -167,7 +171,7 @@ $colorSix:#F9F9F9;
         height: 50px;
         border-radius: 5px;
         padding-left: 1em;
-
+        font-family: "Cairo";
 
         &::placeholder {
           color: #CFCFCF;
@@ -185,8 +189,7 @@ $colorSix:#F9F9F9;
 
         &::placeholder {
           color: #CFCFCF;
-          font-family: "QuireSansW01-Regular",
-            sans-serif;
+          font-family: "Cairo";
         }
       }
 
@@ -203,17 +206,18 @@ $colorSix:#F9F9F9;
     }
 
     &-left {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
 
       h2 {
-        width: 90%;
+        width: 100%;
       }
 
       p {
         font-size: 14px;
         color: #B2B2B2;
         display: block;
-        width: 80%;
+        width: 100%;
 
       }
 
@@ -224,7 +228,8 @@ $colorSix:#F9F9F9;
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          margin-top: 1em;
+          margin-top: 2em;
+          flex-direction: column;
 
           &:nth-child(1) {
             p {
@@ -236,7 +241,7 @@ $colorSix:#F9F9F9;
             color: $colorTwo;
             display: inline;
             font-size: 12px;
-            width: 50%;
+            ;
           }
 
           span {
@@ -246,7 +251,8 @@ $colorSix:#F9F9F9;
             justify-content: center;
             width: 40px;
             height: 40px;
-            margin-right: 2em;
+            margin-right: 0em;
+            margin-bottom: 1em;
 
             svg {
               position: absolute;
@@ -275,15 +281,16 @@ $colorSix:#F9F9F9;
 
     .guide-form-submit {
       display: block;
+      margin: 0 auto;
       margin-top: 1.5em;
       background-color: $colorOne;
-      width: 174px;
+      width: 200px;
       height: 50px;
-      font-size: 18px;
+      font-size: 14px;
       color: $colorTwo;
       text-transform: uppercase;
       display: grid;
-      padding: 0;
+
     }
   }
 }

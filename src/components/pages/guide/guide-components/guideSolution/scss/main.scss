@@ -22,7 +22,7 @@ $colorSix:#F9F9F9;
 
   &-block {
     width: 225px;
-    margin-right: 4em;
+    margin-right: 2em;
 
     &:nth-child(4) {
       margin-right: 0;
@@ -32,6 +32,7 @@ $colorSix:#F9F9F9;
       color: #8B8B8B;
       font-size: 18px;
       font-weight: 200;
+
     }
 
     span {
@@ -40,9 +41,66 @@ $colorSix:#F9F9F9;
 
     }
 
-    img {
+    &-icon-wrapper {
       width: 92.62px;
+      position: relative;
+      margin: 0 auto;
+      cursor: pointer;
+      height: 108.74px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+
+
+
+      }
+
+      &-icon {
+        position: relative;
+        z-index: 2;
+        margin-bottom: .5em;
+
+        svg {
+          &:hover path {
+            fill: #fff;
+          }
+        }
+      }
+
+
+      .guide-solution-svg,
+      .guide-solution-arrow {
+        path {
+          transition: all .5s;
+        }
+      }
+
+      &:hover {
+
+        .guide-solution-svg path {
+          fill: #ffffff;
+        }
+
+        .guide-solution-arrow path {
+          fill: $colorTwo;
+          box-shadow: 0px 1px 16px rgba(#000, .2);
+        }
+      }
     }
+
+    &-content-wrapper {
+      margin-top: .5em;
+      height: 100px;
+    }
+
   }
 
   .curve-first,
@@ -53,13 +111,13 @@ $colorSix:#F9F9F9;
   }
 
   .curve-first {
-    left: 18%;
+    left: 16.7%;
     top: 0;
   }
 
   .curve-third {
     top: 0;
-    right: 18%;
+    right: 16.5%;
   }
 }
 

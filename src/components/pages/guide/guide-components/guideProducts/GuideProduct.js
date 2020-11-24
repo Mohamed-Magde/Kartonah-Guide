@@ -12,37 +12,41 @@ import Slide from "react-reveal/Slide";
 
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
+import { useTranslation } from "react-i18next";
+
 const GuideProduct = () => {
+  const [t] = useTranslation("common");
+
   const data = [
     {
       id: 1,
       img: img1,
-      title: "Men Fashion",
+      title: "products.product1",
     },
     {
       id: 2,
       img: img2,
-      title: "Women Fashion",
+      title: "products.product2",
     },
     {
       id: 3,
       img: img3,
-      title: "Kids Fashion",
+      title: "products.product3",
     },
     {
       id: 4,
       img: img4,
-      title: "Winter Fashion",
+      title: "products.product4",
     },
     {
       id: 5,
       img: img5,
-      title: "Summer Fashion",
+      title: "products.product5",
     },
     {
       id: 6,
       img: img6,
-      title: "Accessories Fashion",
+      title: "products.product6",
     },
   ];
 
@@ -50,14 +54,10 @@ const GuideProduct = () => {
     <div className="guide-product">
       <img src={bgRight} alt="" className="guide-product-bg" />
       <Flip left>
-        <h2 className="guide-title">Products</h2>
+        <h2 className="guide-title">{t("products.title")}</h2>
       </Flip>
       <Zoom>
-        <p className="guide-desc">
-          In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed
-          sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus
-          molestie at
-        </p>
+        <p className="guide-desc">{t("products.desc")}</p>
       </Zoom>
       <Slide right cascade>
         <div className="container">
@@ -67,7 +67,7 @@ const GuideProduct = () => {
               <div className="guide-product-block" key={id}>
                 <div className="guide-product-block-content">
                   <img src={img} alt="" />
-                  <p>{title}</p>
+                  <p>{t(title)}</p>
                 </div>
               </div>
             );

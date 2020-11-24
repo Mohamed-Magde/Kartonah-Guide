@@ -2,6 +2,13 @@
   "welcome": {
     "title": "Welcome to {{framework}}"
   },
+  "nav": {
+    "name1": "Home",
+    "name2": "About",
+    "name3": "Service",
+    "name4": "Contact"
+  },
+
   "banner": {
     "span": "Franchise Guide",
     "first": "kartonah Franchise",
@@ -31,6 +38,14 @@
     "p-2": "Possibility to select small quantities",
     "p-3": "Close deals from your office",
     "p-4": "Save time and money needed to travel"
+  },
+  "market": {
+    "title": "Market Size",
+    "title2": "Export Size",
+    "subtitle": "africa",
+    "subtitle2": "Europe",
+    "desc": "Wholesale clothing export volume in 2020 ",
+    "desc2": "According to the statistics of Anadolu Agency"
   },
   "statistics": {
     "title": "KARTONAH COMPANY STATISTICS",
@@ -101,7 +116,7 @@
     "p2": "Professional conselling",
     "p3": "Financial study",
     "p4": "goods Supply",
-    "p5": "PrTrademark/ Brandingoducts",
+    "p5": "PrTrademark",
     "p6": "Marketing and spread",
     "p7": "follow-up",
     "p8": "Accounting",
@@ -127,5 +142,32 @@
     "p1": "We are create and management all Campaigns on all channels",
     "p2": "We are working on developing a new products.",
     "p3": "We will create interaction community on social media"
+  },
+  "products": {
+    "title": "Products",
+    "desc": "In order to develop our expansion plan, we seek to present a model in the granting of a franchise for investments wishing to enter the clothing sector",
+    "product1": "Men Fashion",
+    "product2": "Women Fashion",
+    "product3": "Kids Fashion",
+    "product4": "Winter Fashion",
+    "product5": "Summer Fashion",
+    "product6": "Accessories Fashion"
+  },
+  "form": {
+    "title1": "HOW TO START FRANSHISE WITH",
+    "title2": "KARTONAH COMPANY",
+    "p": "If you want to invest, you contact us and provide the required data at the following address",
+    "formTitle1": "GET IN ",
+    "formTitle2": "TOUCH",
+    "name": "Name",
+    "namePlaceHolder": "Type Your Name",
+    "name1": "Email",
+    "name1PlaceHolder": "Type Your Email",
+    "name2": "Phone",
+    "name2PlaceHolder": "Type Your Phone",
+    "name3": "Your Message",
+    "name3PlaceHolder": "Type Your Message",
+    "btn": "SEND YOUR MESSAGE"
+
   }
 }

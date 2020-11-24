@@ -2,8 +2,8 @@ import React from "react";
 import "./scss/main.css";
 import Slide from "react-reveal/Slide";
 import Zoom from "react-reveal/Zoom";
-import Flip from "react-reveal/Flip";
-import Fade from "react-reveal/Fade";
+
+import { useTranslation } from "react-i18next";
 const GuideForm = () => {
   const svgElm = (
     <svg
@@ -42,19 +42,16 @@ const GuideForm = () => {
       },
     ],
   };
-
+  const [t] = useTranslation("common");
   return (
     <div className="guide-form">
       <div className="container">
         <Zoom>
           <div className="guide-form-left">
             <h2 className="guide-offer-title">
-              How to start Franshise with <span>kartonah company</span>
+              {t("form.title1")} <span>{t("form.title2")}</span>
             </h2>
-            <p className="guide-form-de">
-              If you want to invest, you contact us and provide the required
-              data at the following address
-            </p>
+            <p className="guide-form-de">{t("form.p")}</p>
             <ul>
               {data.leftList.map((item) => {
                 const { icon, title, id } = item;
@@ -74,27 +71,27 @@ const GuideForm = () => {
         <form className="guide-form-right">
           <Zoom>
             <h3 className="guide-form-right-title">
-              get in <span>touch</span>
+              {t("form.formTitle1")} <span>{t("form.formTitle2")}</span>
             </h3>
           </Zoom>
           <Slide left>
             <div className="guide-form-right-group">
-              <label htmlFor="">Name</label>
-              <input type="text" placeholder="Example" />
+              <label htmlFor="">{t("form.name")}</label>
+              <input type="text" placeholder={t("form.namePlaceHolder")} />
             </div>
             <div className="guide-form-right-group">
-              <label htmlFor="">Email</label>
-              <input type="email" placeholder="Example" />
+              <label htmlFor="">{t("form.name1")}</label>
+              <input type="email" placeholder={t("form.name1PlaceHolder")} />
             </div>
             <div className="guide-form-right-group">
-              <label htmlFor="">Phone</label>
-              <input type="text" placeholder="Example" />
+              <label htmlFor="">{t("form.name2")}</label>
+              <input type="text" placeholder={t("form.name2PlaceHolder")} />
             </div>
             <div className="guide-form-right-group">
-              <label htmlFor="">Your Message</label>
+              <label htmlFor="">{t("form.name3")}</label>
               <textarea
                 name=""
-                placeholder="Example"
+                placeholder={t("form.name3PlaceHolder")}
                 id=""
                 cols="30"
                 rows="10"
@@ -104,7 +101,7 @@ const GuideForm = () => {
           <input
             className="guide-form-submit"
             type="submit"
-            value="Send Message"
+            value={t("form.btn")}
           />
         </form>
       </div>
