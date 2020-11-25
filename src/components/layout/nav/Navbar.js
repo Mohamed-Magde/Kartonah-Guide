@@ -26,25 +26,31 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
-      <nav className={state ? "nav-mobile nav" : "nav"}>
-        <div className="container">
-          <div className="nav-left">
-            <img src={logo} alt="" />
+      <Slide left cascade>
+        <nav className={state ? "nav-mobile nav" : "nav"}>
+          <div className="container">
+            <div className="nav-left">
+              <img src={logo} alt="" />
+            </div>
+            <ul className="nav-list">
+              {data.map((item) => {
+                const { id, route, text } = item;
+                return (
+                  <li key={id}>
+                    <a
+                      onClick={handleChange}
+                      className="nav-list-item"
+                      href={route}
+                    >
+                      {t(text)}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <ul className="nav-list">
-            {data.map((item) => {
-              const { id, route, text } = item;
-              return (
-                <li key={id}>
-                  <a className="nav-list-item" href={route}>
-                    {t(text)}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </nav>{" "}
+        </nav>{" "}
+      </Slide>{" "}
     </>
   );
 };

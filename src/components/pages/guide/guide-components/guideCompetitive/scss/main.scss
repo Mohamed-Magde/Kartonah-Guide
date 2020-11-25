@@ -27,11 +27,12 @@ $colorSix:#F9F9F9;
 
   .container {
     display: grid;
-    grid-template-columns: repeat(2, 540px);
+    grid-template-columns: repeat(2, 500px);
     grid-gap: 2em;
   }
 
   &-block {
+    width: 100%;
     height: 120px;
     background-color: #fff;
     display: flex;

@@ -79,6 +79,21 @@
   top: -1em;
 }
 
+.arabic .guide-product h2 {
+  margin-bottom: 1.5em;
+}
+
+.arabic .guide-product-block img {
+  left: 50%;
+}
+
+.arabic .guide-product-block-content {
+  padding-left: 7%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media only screen and (max-width: 600px) {
   .guide-product {
     background-color: rgba(223, 223, 223, 0.2);
@@ -154,6 +169,21 @@
     position: absolute;
     right: 10%;
     top: -1em;
+  }
+  .arabic .guide-product h2 {
+    margin-bottom: 1.5em;
+  }
+  .arabic .guide-product-block img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: .5em;
+  }
+  .arabic .guide-product-block-content {
+    padding-left: 7%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=main.css.map */

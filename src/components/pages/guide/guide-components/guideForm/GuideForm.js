@@ -44,7 +44,7 @@ const GuideForm = () => {
   };
   const [t] = useTranslation("common");
   return (
-    <div className="guide-form">
+    <div id="contact" className="guide-form">
       <div className="container">
         <Zoom>
           <div className="guide-form-left">

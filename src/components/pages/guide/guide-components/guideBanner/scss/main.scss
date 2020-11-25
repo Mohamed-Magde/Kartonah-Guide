@@ -102,7 +102,22 @@ $colorSix:#F9F9F9;
 
   }
 
+  .btn-primary {
+    margin-top: 1em;
+    padding: .5em 1em;
+    color: $colorTwo;
+    background-color: $colorOne;
+    border-radius: 5px;
+    display: inline-block;
+    width: fit-content;
+    transition: all .5s;
+    box-shadow: 0px 1px 6px rgba(#000, .2);
 
+    &:hover {
+      background-color: $colorTwo;
+      color: #fff;
+    }
+  }
 
   .ar-top {
     display: grid;
@@ -208,6 +223,22 @@ $colorSix:#F9F9F9;
     display: block;
     width: fit-content;
     margin: 0 auto;
+    margin-bottom: 1em;
+  }
+
+  .guide-franchise,
+  .guide-adv {
+    .guide-title {
+      margin: 0;
+      margin-bottom: 2em;
+    }
+
+  }
+
+  .guide-adv {
+    .guide-title {
+      display: inline-block;
+    }
   }
 }
 
@@ -250,6 +281,12 @@ $colorSix:#F9F9F9;
 
 
 @media only screen and (max-width: 600px) {
+  .guide-franchise {
+    .guide-title {
+      display: inline-block;
+    }
+  }
+
   html {
     font-size: 50%;
   }
@@ -268,6 +305,7 @@ $colorSix:#F9F9F9;
       display: flex;
       padding-bottom: 4em;
 
+
       &-left {
         width: 100vw;
         grid-column: 1 / -1;
@@ -281,7 +319,15 @@ $colorSix:#F9F9F9;
           flex-direction: column;
         }
 
+        .btn-primary {
+          padding: .5em 2em;
+          font-size: 2rem;
+          margin: 0 auto;
+          margin-top: 1.5em;
+        }
+
         span {
+          margin-top: -3em;
           font-size: 24px;
           font-weight: 200;
         }

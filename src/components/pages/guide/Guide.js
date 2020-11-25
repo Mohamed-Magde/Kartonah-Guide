@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Zoom from "react-reveal/Zoom";
 
 import GuideAdvantages from "./guide-components/guideAdvantages/GuideAdvantages";
 import GuideBanner from "./guide-components/guideBanner/GuideBanner";
@@ -26,17 +27,19 @@ const Guide = () => {
 
   return (
     <div className={lang === "ar" && "arabic"}>
-      <div className="guide-lang">
-        {lang === "ar" ? (
-          <button value="en" onClick={handleLang}>
-            en
-          </button>
-        ) : (
-          <button value="ar" onClick={handleLang}>
-            ar
-          </button>
-        )}
-      </div>
+      <Zoom>
+        <div className="guide-lang">
+          {lang === "ar" ? (
+            <button value="en" onClick={handleLang}>
+              en
+            </button>
+          ) : (
+            <button value="ar" onClick={handleLang}>
+              ar
+            </button>
+          )}
+        </div>
+      </Zoom>
       <Navbar />
       <GuideBanner lang={lang} />
       <GuideObstacles />

@@ -79,6 +79,25 @@ $colorSix:#F9F9F9;
   }
 }
 
+.arabic {
+  .guide-product {
+    h2 {
+      margin-bottom: 1.5em;
+    }
+
+    &-block {
+      img {
+        left: 50%;
+      }
+
+      &-content {
+        padding-left: 7%;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .guide-product {
     background-color: rgba(#DFDFDF, .2);
@@ -156,4 +175,26 @@ $colorSix:#F9F9F9;
       top: -1em;
     }
   }
+
+  .arabic {
+    .guide-product {
+      h2 {
+        margin-bottom: 1.5em;
+      }
+
+      &-block {
+        img {
+          left: 50%;
+          transform: translateX(-50%);
+          margin-bottom: .5em;
+        }
+
+        &-content {
+          padding-left: 7%;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
 }

@@ -58,7 +58,7 @@ const GuideSupport = () => {
     ],
   };
   return (
-    <div className="guide-support">
+    <div id="service" className="guide-support">
       <Zoom>
         <h2 className="guide-title">{t("continuousSupport.title")}</h2>
       </Zoom>

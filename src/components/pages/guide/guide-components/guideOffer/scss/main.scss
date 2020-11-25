@@ -119,18 +119,81 @@ $colorSix:#F9F9F9;
 
 .arabic {
   .guide-offer {
-    text-align: right;
 
-    &-top {
-      &-left {
-        width: 500px;
+
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        p {
+          margin: 0;
+          order: -1;
+        }
+
+        span {
+          display: flex;
+
+          margin-right: 0em;
+          margin-left: .5em;
+        }
       }
-
     }
 
-    &-bottom {}
+    &-title {
+      text-align: right;
+      width: 100%;
+    }
 
+    p {
+      text-align: right;
+      width: 100%;
+    }
+
+
+    &-top {
+      .container {
+        align-items: center;
+      }
+
+      &-right {
+        width: 40%;
+
+      }
+
+      &-left {
+
+        width: 50%;
+        margin-right: 10%;
+      }
+    }
+
+    &-bottom {
+      margin-top: 6em;
+
+      .container {
+        align-items: center;
+      }
+
+
+
+      .guide-offer-title {
+        width: 100%;
+      }
+
+      &-right {
+        margin-left: 3em;
+      }
+
+      &-left {
+        display: block;
+        width: 50%;
+        height: 100%;
+        margin-left: -3em;
+        margin-right: 2em;
+      }
+    }
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -255,5 +318,89 @@ $colorSix:#F9F9F9;
       top: 50%;
       right: -3%;
     }
+  }
+
+
+  .arabic {
+    .guide-offer {
+
+
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        li {
+          p {
+            margin: 0;
+            order: -1;
+            text-align: right;
+          }
+
+          span {
+            display: flex;
+            width: 3rem;
+            margin-right: 0em;
+            margin-left: .5em;
+          }
+        }
+      }
+
+      &-title {
+        text-align: center;
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+        width: 100%;
+      }
+
+
+      &-top {
+        .container {
+          align-items: center;
+        }
+
+        &-right {
+          width: 100%;
+
+        }
+
+        &-left {
+
+          width: 100%;
+          margin-right: 0%;
+        }
+      }
+
+      &-bottom {
+        margin-top: 6em;
+
+        .container {
+          align-items: center;
+        }
+
+
+
+        .guide-offer-title {
+          width: 100%;
+        }
+
+        &-right {
+          margin-left: 0em;
+          width: 100%;
+        }
+
+        &-left {
+          display: none;
+          width: 100%;
+          height: 100%;
+          margin-left: -3em;
+          margin-right: 2em;
+          order: 1;
+        }
+      }
+    }
+
   }
 }

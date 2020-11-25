@@ -101,6 +101,27 @@
   margin-left: -1em;
 }
 
+.guide-banner .btn-primary {
+  margin-top: 1em;
+  padding: .5em 1em;
+  color: #41484F;
+  background-color: #FDDA2A;
+  border-radius: 5px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.guide-banner .btn-primary:hover {
+  background-color: #41484F;
+  color: #fff;
+}
+
 .guide-banner .ar-top {
   display: -ms-grid;
   display: grid;
@@ -195,6 +216,17 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.arabic .guide-franchise .guide-title,
+.arabic .guide-adv .guide-title {
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.arabic .guide-adv .guide-title {
+  display: inline-block;
 }
 
 .guide-lang {
@@ -231,6 +263,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .guide-franchise .guide-title {
+    display: inline-block;
+  }
   html {
     font-size: 50%;
   }
@@ -266,7 +301,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .guide-banner-top-left .btn-primary {
+    padding: .5em 2em;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
   .guide-banner-top-left span {
+    margin-top: -3em;
     font-size: 24px;
     font-weight: 200;
   }

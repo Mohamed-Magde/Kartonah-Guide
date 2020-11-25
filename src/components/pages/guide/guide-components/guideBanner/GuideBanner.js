@@ -10,14 +10,17 @@ import { useTranslation } from "react-i18next";
 const GuideBanner = ({ lang }) => {
   const [t] = useTranslation("common");
   return (
-    <div className={lang === "ar" ? "guide-banner ar" : "guide-banner"}>
+    <div
+      id="home"
+      className={lang === "ar" ? "guide-banner ar" : "guide-banner"}
+    >
       <div
         className={
           lang === "ar" ? "guide-banner-top ar-top" : "guide-banner-top"
         }
       >
         <div className="guide-banner-top-left">
-          <Fade left>
+          <Zoom right cascade>
             {" "}
             <div className="container">
               <span>{t("banner.span")}</span>
@@ -26,11 +29,12 @@ const GuideBanner = ({ lang }) => {
                 {t("banner.first")} <span>{t("banner.second")}</span>
               </h1>
 
-              <Zoom>
-                <p>{t("banner.p")}</p>
-              </Zoom>
+              <p>{t("banner.p")}</p>
+              <a href="#contact" className="btn-primary">
+                {t("banner.btn")}
+              </a>
             </div>
-          </Fade>
+          </Zoom>
         </div>
 
         <Fade right>
@@ -45,23 +49,19 @@ const GuideBanner = ({ lang }) => {
       </div>
       <div className="guide-banner-bottom">
         <div className="container">
-          <Fade left>
-            <p className="guide-banner-bottom-block first">
-              {t("banner.bottom-first")}
-            </p>
-          </Fade>
-          <Zoom>
-            <p className="guide-banner-bottom-block">
-              {" "}
-              <span></span> {t("banner.bottom-second")}
-            </p>
-          </Zoom>
-          <Fade right>
-            <p className="guide-banner-bottom-block">
-              {" "}
-              <span></span> {t("banner.bottom-third")}
-            </p>
-          </Fade>
+          <p className="guide-banner-bottom-block first">
+            {t("banner.bottom-first")}
+          </p>
+
+          <p className="guide-banner-bottom-block">
+            {" "}
+            <span></span> {t("banner.bottom-second")}
+          </p>
+
+          <p className="guide-banner-bottom-block">
+            {" "}
+            <span></span> {t("banner.bottom-third")}
+          </p>
         </div>
       </div>
       <img src={imgBottom} alt="" className="guide-banner-img" />

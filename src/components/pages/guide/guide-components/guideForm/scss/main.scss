@@ -20,6 +20,9 @@ $colorSix:#F9F9F9;
       display: block;
       font-size: 1rem;
       margin-top: 1.5em;
+      font-family: 'Cairo',
+        sans-serif !important;
+
     }
 
     input {
@@ -29,6 +32,8 @@ $colorSix:#F9F9F9;
       height: 50px;
       border-radius: 5px;
       padding-left: 1em;
+      font-family: 'Cairo',
+        sans-serif !important;
 
       &::placeholder {
         color: #CFCFCF;
@@ -145,6 +150,14 @@ $colorSix:#F9F9F9;
   }
 }
 
+.arabic {
+  .guide-form {
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .guide-form {
     text-align: center;
@@ -160,7 +173,6 @@ $colorSix:#F9F9F9;
         display: block;
         font-size: 2rem;
         margin-top: 1.5em;
-        font-family: "Cairo";
         margin-bottom: .5em;
       }
 

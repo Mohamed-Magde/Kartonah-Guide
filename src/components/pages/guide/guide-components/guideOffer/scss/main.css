@@ -113,12 +113,75 @@
   right: -3%;
 }
 
-.arabic .guide-offer {
+.arabic .guide-offer ul {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.arabic .guide-offer ul li p {
+  margin: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.arabic .guide-offer ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0em;
+  margin-left: .5em;
+}
+
+.arabic .guide-offer-title {
   text-align: right;
+  width: 100%;
+}
+
+.arabic .guide-offer p {
+  text-align: right;
+  width: 100%;
+}
+
+.arabic .guide-offer-top .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arabic .guide-offer-top-right {
+  width: 40%;
 }
 
 .arabic .guide-offer-top-left {
-  width: 500px;
+  width: 50%;
+  margin-right: 10%;
+}
+
+.arabic .guide-offer-bottom {
+  margin-top: 6em;
+}
+
+.arabic .guide-offer-bottom .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arabic .guide-offer-bottom .guide-offer-title {
+  width: 100%;
+}
+
+.arabic .guide-offer-bottom-right {
+  margin-left: 3em;
+}
+
+.arabic .guide-offer-bottom-left {
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin-left: -3em;
+  margin-right: 2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -240,6 +303,71 @@
     position: absolute;
     top: 50%;
     right: -3%;
+  }
+  .arabic .guide-offer ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .arabic .guide-offer ul li p {
+    margin: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    text-align: right;
+  }
+  .arabic .guide-offer ul li span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 3rem;
+    margin-right: 0em;
+    margin-left: .5em;
+  }
+  .arabic .guide-offer-title {
+    text-align: center;
+    width: 100%;
+  }
+  .arabic .guide-offer p {
+    text-align: center;
+    width: 100%;
+  }
+  .arabic .guide-offer-top .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arabic .guide-offer-top-right {
+    width: 100%;
+  }
+  .arabic .guide-offer-top-left {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .arabic .guide-offer-bottom {
+    margin-top: 6em;
+  }
+  .arabic .guide-offer-bottom .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arabic .guide-offer-bottom .guide-offer-title {
+    width: 100%;
+  }
+  .arabic .guide-offer-bottom-right {
+    margin-left: 0em;
+    width: 100%;
+  }
+  .arabic .guide-offer-bottom-left {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-left: -3em;
+    margin-right: 2em;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

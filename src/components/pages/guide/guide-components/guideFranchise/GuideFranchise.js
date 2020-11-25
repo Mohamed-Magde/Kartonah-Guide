@@ -33,7 +33,7 @@ const GuideFranchise = () => {
     },
   ];
   return (
-    <div className="guide-franchise">
+    <div id="about" className="guide-franchise">
       <div className="guide-franchise-left">
         <h3 className="guide-title">{t("franchise.title")}</h3>
         <Slide right cascade>
