@@ -60,11 +60,11 @@ const GuideSupport = () => {
   return (
     <div id="service" className="guide-support">
       <Zoom>
-        <h2 className="guide-title">{t("continuousSupport.title")}</h2>
+        <h2 className="guide-title">{t("continuousMarketing.title")}</h2>
       </Zoom>
-      <Slide left cascade>
+      <Slide right cascade>
         <div className="container">
-          {data.first.map((item) => {
+          {data.second.map((item) => {
             const { id, title, desc, img } = item;
             return (
               <div className="guide-support-block" key={id}>
@@ -77,11 +77,11 @@ const GuideSupport = () => {
         </div>
       </Slide>
       <Zoom>
-        <h2 className="guide-title">{t("continuousMarketing.title")}</h2>
+        <h2 className="guide-title">{t("continuousSupport.title")}</h2>
       </Zoom>
-      <Slide right cascade>
+      <Slide left cascade>
         <div className="container">
-          {data.second.map((item) => {
+          {data.first.map((item) => {
             const { id, title, desc, img } = item;
             return (
               <div className="guide-support-block" key={id}>
