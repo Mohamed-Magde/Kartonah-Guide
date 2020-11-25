@@ -49,9 +49,76 @@
   height: 800.01px;
 }
 
+.arabic .guide-franchise {
+  margin-top: -3em;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #41484F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arabic .guide-franchise-left {
+  padding-left: 0%;
+  padding-right: 5%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: right;
+}
+
+.arabic .guide-franchise-left h3 {
+  display: inline-block;
+}
+
+.arabic .guide-franchise-left-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.arabic .guide-franchise-left-block span {
+  font-size: 24px;
+}
+
+.arabic .guide-franchise-left-block p {
+  display: block;
+  width: 491px;
+  font-size: 18px;
+  color: #747474;
+}
+
+.arabic .guide-franchise-left-block img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: block;
+  width: 95px;
+  height: 95px;
+  margin-right: 0em;
+  margin-left: 1em;
+}
+
+.arabic .guide-franchise-right img {
+  margin-right: 0em;
+  margin-left: -15em;
+  display: block;
+  width: 783.72px;
+  height: 800.01px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @media only screen and (max-width: 600px) {
   .guide-franchise {
-    margin-top: 3em;
+    padding-top: 8em !important;
     margin-bottom: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67,6 +134,7 @@
   }
   .guide-franchise-left {
     padding-left: 0%;
+    width: 100%;
   }
   .guide-franchise-left-block {
     display: -webkit-box;
@@ -90,7 +158,7 @@
   }
   .guide-franchise-left-block p {
     display: block;
-    width: 90%;
+    width: 90% !important;
     margin: 0 auto;
     font-size: 18px;
     color: #747474;
@@ -100,6 +168,9 @@
     width: 95px;
     height: 95px;
     margin-right: 0em;
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
   }
   .guide-franchise-right {
     display: none;
