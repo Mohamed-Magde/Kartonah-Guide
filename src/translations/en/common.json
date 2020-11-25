@@ -52,7 +52,10 @@
     "title": "KARTONAH COMPANY STATISTICS",
     "name1": "Monthly Access Rate",
     "name2": "Number Of Factories",
-    "name3": "Number Of Clients"
+    "name3": "Number Of Clients",
+    "p1": "Million",
+    "p2": "Factory",
+    "p3": "Trader"
   },
   "franchise": {
     "title": "Franchise",

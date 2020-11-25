@@ -19,21 +19,21 @@ const GuideStatistics = () => {
       id: 1,
       title: "statistics.name1",
       number: "1.50",
-      type: "Million",
+      type: "statistics.p1",
       img: img1,
     },
     {
       id: 2,
       title: "statistics.name2",
       number: "1000+",
-      type: "factory",
+      type: "statistics.p2",
       img: img2,
     },
     {
       id: 3,
       title: "statistics.name3",
       number: "3000+",
-      type: "Trader",
+      type: "statistics.p3",
       img: img3,
     },
   ];
@@ -54,7 +54,7 @@ const GuideStatistics = () => {
                 <h6>{t(title)}</h6>
                 <img src={img} alt="" />
                 <span>{number}</span>
-                <p>{type}</p>
+                <p>{t(type)}</p>
               </div>
             </Slide>
           );
