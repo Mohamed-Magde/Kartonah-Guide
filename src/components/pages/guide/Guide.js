@@ -34,8 +34,8 @@ const Guide = () => {
               en
             </button>
           ) : (
-            <button value="ar" onClick={handleLang}>
-              ar
+            <button className="guide-lang-ar" value="ar" onClick={handleLang}>
+              AR
             </button>
           )}
         </div>

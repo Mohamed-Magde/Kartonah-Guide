@@ -354,7 +354,7 @@
   .arabic .guide-competitive-block:hover::after {
     content: '';
     position: absolute;
-    left: 2%;
+    left: 69%;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -366,7 +366,7 @@
   .arabic .guide-competitive-block:hover::before {
     content: '';
     position: absolute;
-    left: 0%;
+    left: 99%;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
