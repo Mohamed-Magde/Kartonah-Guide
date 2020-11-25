@@ -162,10 +162,7 @@
     background-color: #FDDA2A;
     border-radius: 50%;
   }
-  .guide-competitive-block:nth-child(3) {
-    position: relative;
-  }
-  .guide-competitive-block:nth-child(3)::before {
+  .guide-competitive-block:hover::before {
     content: '';
     position: absolute;
     left: 0%;
@@ -177,9 +174,12 @@
     background-color: #FDDA2A;
     border-radius: 50%;
   }
-  .guide-competitive-block:nth-child(3) img {
+  .guide-competitive-block:hover img {
     position: relative;
     z-index: 2;
+  }
+  .guide-competitive-block:nth-child(3) {
+    position: relative;
   }
   .guide-competitive-block img {
     display: block;

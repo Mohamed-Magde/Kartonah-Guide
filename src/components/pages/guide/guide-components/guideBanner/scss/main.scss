@@ -278,7 +278,18 @@ $colorSix:#F9F9F9;
 }
 
 
+.arabic {
+  .guide-banner {
+    span {
+      margin-top: -3em;
+    }
+  }
 
+  .btn-primary {
+    display: inline-block;
+    margin-left: 80%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .guide-franchise {

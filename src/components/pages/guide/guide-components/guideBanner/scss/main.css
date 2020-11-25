@@ -262,6 +262,15 @@
   color: #41484F;
 }
 
+.arabic .guide-banner span {
+  margin-top: -3em;
+}
+
+.arabic .btn-primary {
+  display: inline-block;
+  margin-left: 80%;
+}
+
 @media only screen and (max-width: 600px) {
   .guide-franchise .guide-title {
     display: inline-block;

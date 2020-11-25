@@ -166,12 +166,6 @@ $colorSix:#F9F9F9;
           background-color: $colorOne;
           border-radius: 50%;
         }
-      }
-
-      &:nth-child(3) {
-        position: relative;
-
-
 
         &::before {
           content: '';
@@ -190,6 +184,14 @@ $colorSix:#F9F9F9;
           position: relative;
           z-index: 2;
         }
+      }
+
+      &:nth-child(3) {
+        position: relative;
+
+
+
+
       }
 
       img {
